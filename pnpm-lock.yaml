@@ -498,6 +498,9 @@ importers:
       sass:
         specifier: ^1.58.3
         version: 1.58.3
+      stylelint:
+        specifier: ^15.0.0
+        version: 15.0.0
       vite:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@15.12.4)(sass@1.58.3)
