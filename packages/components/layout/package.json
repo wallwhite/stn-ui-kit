@@ -1,6 +1,6 @@
 {
-  "name": "@stn-ui/avatar",
-  "version": "2.0.2",
+  "name": "@stn-ui/layout",
+  "version": "2.0.1",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
@@ -13,8 +13,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/https://github.com/Storency/stn-ui.git",
-    "directory": "packages/components/avatar"
+    "url": "git+https://github.com/Storency/stn-ui.git",
+    "directory": "packages/components/layout"
   },
   "scripts": {
     "build": "pnpm typecheck && vite build",
@@ -27,21 +27,25 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
+    "@stn-ui/provider": "workspace:*",
     "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
     "@stn-ui/theme": "workspace:*",
-    "object-hash": "^3.0.0"
+    "object-hash": "^3.0.0",
+    "react-responsive": "^9.0.2"
   },
   "devDependencies": {
+    "@stn-ui/provider": "workspace:*",
     "@types/object-hash": "^3.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.44.0",
     "clean-package": "2.2.0",
+    "eslint": "^8.44.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "rollup-plugin-banner2": "^1.2.2",
     "sass": "^1.58.3",
     "typescript": "^4.9.3",
     "vite": "^4.4.9",
