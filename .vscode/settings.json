@@ -1,2 +1,12 @@
 {
- }
+  "editor.formatOnSave": false,
+  "javascript.validate.enable": false,
+  "javascript.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+  },
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+  "editor.tabSize": 2
+}

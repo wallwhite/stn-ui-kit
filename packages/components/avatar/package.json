@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/avatar",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
@@ -19,7 +19,6 @@
   "scripts": {
     "build": "pnpm typecheck && vite build",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-    "stylelint": "stylelint \"src/**/*.scss\"",
     "typecheck": "tsc --noEmit",
     "prepack": "clean-package",
     "postpack": "clean-package restore",

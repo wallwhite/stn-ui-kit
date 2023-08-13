@@ -1,0 +1,62 @@
+name: CI - UI Kit
+
+on:
+  pull_request:
+    paths:
+      - ".changeset/**"
+      - "packages/**"
+    branches:
+      - main
+
+jobs:
+  build:
+    name: 🔮 Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/common-actions/install
+
+      - name: Build packages
+        run: pnpm build
+  
+  eslint:
+    name: 🛠  ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/common-actions/install
+
+      - name: Run ESLint
+        run: pnpm lint
+
+  types:
+    name: 🛠 TypeScript
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/common-actions/install
+
+      - name: Run typecheck
+        run: pnpm typecheck
+
+  stylelint:
+    name: 🛠 Stylelint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/common-actions/install
+
+      - name: Run Stylelint
+        run: pnpm stylelint

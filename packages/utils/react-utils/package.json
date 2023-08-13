@@ -1,6 +1,6 @@
 {
-  "name": "@stn-ui/react",
-  "version": "2.0.3",
+  "name": "@stn-ui/react-utils",
+  "version": "2.0.2",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
@@ -14,12 +14,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Storency/stn-ui.git",
-    "directory": "packages/core/react"
+    "directory": "packages/utils/react-utils"
   },
   "scripts": {
-    "prebuild": "node src/scripts/prebuild.js",
     "build": "pnpm typecheck && vite build",
-    "postbuild": "node src/scripts/postbuild.js",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc --noEmit",
     "prepack": "clean-package",
@@ -29,26 +27,17 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
-    "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18"
   },
-  "dependencies": {
-    "@stn-ui/avatar": "workspace:*",
-    "@stn-ui/icons": "workspace:*",
-    "@stn-ui/loadable": "workspace:*",
-    "@stn-ui/loader": "workspace:*",
-    "@stn-ui/provider": "workspace:*",
-    "object-hash": "^3.0.0"
-  },
   "devDependencies": {
-    "@types/object-hash": "^3.0.3",
+    "@react-types/shared": "^3.19.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.44.0",
     "clean-package": "2.2.0",
+    "eslint": "^8.44.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "sass": "^1.58.3",
+    "rollup-plugin-banner2": "^1.2.2",
     "typescript": "^4.9.3",
     "vite": "^4.4.9",
     "vite-plugin-dts": "^2.3.0"

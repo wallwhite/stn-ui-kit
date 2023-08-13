@@ -19,7 +19,6 @@
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-    "stylelint": "stylelint \"src/**/*.scss\"",
     "typecheck": "tsc --noEmit",
     "prepack": "clean-package",
     "postpack": "clean-package restore",

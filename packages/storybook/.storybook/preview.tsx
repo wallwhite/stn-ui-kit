@@ -1,8 +1,7 @@
 import React from "react";
 import { themes } from "@storybook/theming";
 import type { Preview } from '@storybook/react';
-import '@stn-ui/theme/src/styles/common.scss';
-import '@stn-ui/theme/src/styles/theme.scss';
+import '@stn-ui/theme/stn-ui.css';
 
 
 const decorators: Preview['decorators'] = [
