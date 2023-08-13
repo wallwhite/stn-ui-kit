@@ -59,4 +59,4 @@ jobs:
         uses: ./.github/common-actions/install
 
       - name: Run Stylelint
-        run: pnpm stylelint
+        run: pnpm stylecheck
