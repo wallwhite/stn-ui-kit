@@ -1,0 +1,84 @@
+@import 'helpers';
+
+.messageAvatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    font-weight: 700;
+    color: colorRgba(#FEFEFE, 0.85);
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+
+    &.loading {
+        background: #f3f5f7;
+        color: #cfd3d4;
+        box-shadow: 0 0 0 0.25rem #e8ecef;
+    }
+
+    &.bordered {
+        box-shadow: 0 0 0 0.25rem #FEFEFE;
+    }
+}
+
+.type {
+    &-circle {
+        border-radius: 100px;
+    }
+
+    &-square {
+        &.size {
+            &-s {
+                border-radius: 8px;
+            }
+
+            &-m {
+                border-radius: 16px;
+            }
+
+            &-l {
+                border-radius: 32px;
+            }
+        }
+    }
+}
+
+.size {
+    &-s {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+
+        svg {
+            @include size(18px);
+        }
+    }
+
+    &-m {
+        width: 64px;
+        height: 64px;
+        font-size: 24px;
+
+        svg {
+            @include size(32px);
+        }
+    }
+
+    &-l {
+        width: 128px;
+        height: 128px;
+        font-size: 48px;
+
+        svg {
+            @include size(64px);
+        }
+    }
+}

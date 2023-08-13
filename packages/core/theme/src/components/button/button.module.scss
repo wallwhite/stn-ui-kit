@@ -1,0 +1,266 @@
+@use "sass:map";
+
+$sizeKeys: 's', 'm', 'l';
+$buttonSizeHorizontal: (
+  s: 32px,
+  m:  40px,
+  l:  48px,
+);
+$buttonPaddingHorizontal: (
+  s: 16px,
+  m: 24px,
+  l: 32px,
+);
+$buttonFontSize: (
+  s: 14px,
+  m: 14px,
+  l: 16px,
+);
+$buttonRadiuses: (
+  s: 8px,
+  m: 12px,
+  l: 12px,
+);
+$iconSizes: (
+  s: 18px,
+  m: 24px,
+  l: 28px,
+);
+$iconMargins: (
+  s: 4px,
+  m: 8px,
+  l: 10px,
+);
+$variants: 'ghost', 'primary', 'secondary';
+$colors: 'default', 'dark';
+
+.button {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  width: fit-content;
+  min-width: fit-content;
+  border: none;
+  outline: none;
+
+  &.loading {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &.wide {
+    width: 100%;
+  }
+
+  & > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@each $size in $sizeKeys {
+  .size-#{$size} {
+    height: map.get($buttonSizeHorizontal, $size);
+    padding: 0 map.get($buttonPaddingHorizontal, $size);
+    border-radius: map.get($buttonRadiuses, $size);
+    font-size: map.get($buttonFontSize, $size);
+
+    &.iconOnly {
+      width: map.get($buttonSizeHorizontal, $size);
+      height: map.get($buttonSizeHorizontal, $size);
+      padding: 0;
+      border-radius: map.get($buttonSizeHorizontal, $size)
+    }
+
+    svg,
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: map.get($iconSizes, $size);
+      height: map.get($iconSizes, $size);
+      position: relative;
+
+      &.left {
+        margin-right: map.get($iconMargins, $size)
+      }
+
+      &.right {
+        margin-left: map.get($iconMargins, $size)
+      }
+
+      svg {
+        width: map.get($iconSizes, $size);
+        height: map.get($iconSizes, $size);
+      }
+    }
+
+    .iconOnlyText {
+      position: absolute;
+    }
+  }
+}
+
+.color {
+  &-default {
+    &.variant {
+      &-primary {
+        background: #0084FF;
+        color: #FEFEFE;
+
+        &.loading,
+        &.disabled {
+          background: #BEDFFF;
+          pointer-events: none;
+        }
+
+        &:hover {
+          background: #319BFF;
+        }
+
+        &:active {
+          box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%) inset;
+        }
+      }
+
+      &-ghost {
+        border: 2px solid #E8ECEF;
+        color: #141718;
+
+        &.disabled,
+        &.loading {
+          border-color: #E8ECEF;
+          pointer-events: none;
+        }
+
+        &.disabled {
+          color: #E8E8E8
+        }
+
+        &.loading {
+          color: #141718;
+        }
+
+        &:hover {
+          background: #E8ECEF;
+        }
+
+        &:active {
+          box-shadow: 0 4px 4px 0 #DCE1E4 inset;
+        }
+      }
+
+      &-secondary {
+        background: #141718;
+        color: #FEFEFE;
+
+        &.loading,
+        &.disabled {
+          background: #C4C5C5;
+          pointer-events: none;
+        }
+
+        &:hover {
+          background: #4F5152;
+        }
+
+        &:active {
+          background: #141718;
+        }
+      }
+    }
+  }
+
+  &-dark {
+    &.variant {
+      &-primary {
+        background: #0084FF;
+        color: #FEFEFE;
+
+        &.loading,
+        &.disabled {
+          background: #0F3352;
+          pointer-events: none;
+        }
+
+        &.disabled {
+          color: #4F5152;
+        }
+
+        &.loading {
+          color: #FEFEFE;
+        }
+
+        &:hover {
+          background: #319BFF;
+        }
+
+        &:active {
+          box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%) inset;
+        }
+      }
+
+      &-ghost {
+        border: 2px solid #343839;
+        color: #FEFEFE;
+
+        &.disabled,
+        &.loading {
+          border: 2px solid #343839;
+          pointer-events: none;
+        }
+
+        &.disabled {
+          color: #343839
+        }
+
+        &.loading {
+          color: #FEFEFE;
+        }
+
+        &:hover {
+          background: #343839;
+        }
+
+        &:active {
+          box-shadow: 0 4px 4px 0 #2D3031 inset;
+        }
+      }
+
+      &-secondary {
+        background: #FEFEFE;
+        color: #141718;
+
+        &.loading,
+        &.disabled {
+          background: #4F5052;
+          pointer-events: none;
+        }
+
+        &.disabled {
+          color: #141718;
+        }
+
+        &.loading {
+          color: #FEFEFE;
+        }
+
+        &:hover {
+          background: #D2D2D2;
+        }
+
+        &:active {
+          box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%) inset;
+        }
+      }
+    }
+  }
+}

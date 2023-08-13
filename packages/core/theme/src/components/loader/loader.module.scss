@@ -1,0 +1,15 @@
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  
+    &.inline {
+      display: inline-flex;
+      position: static;
+      vertical-align: top;
+    }
+  }
+  

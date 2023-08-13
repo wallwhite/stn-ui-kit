@@ -1,0 +1,109 @@
+{
+  "extends": [
+    "@wallwhite/eslint-config-react-ts"
+  ],
+  "rules": {
+    "react/jsx-indent": [
+      2,
+      2
+    ],
+    "react/jsx-indent-props": [
+      2,
+      2
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "tabWidth": 2,
+        "printWidth": 120,
+        "trailingComma": "all"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": 0,
+    "import/order": [
+      2,
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "react*",
+            "group": "builtin"
+          },
+          {
+            "pattern": "next",
+            "group": "builtin"
+          },
+          {
+            "pattern": "next/**",
+            "group": "builtin"
+          },
+          {
+            "pattern": "next*",
+            "group": "builtin"
+          },
+          {
+            "pattern": "@stn-ui/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "*.sass",
+            "group": "object",
+            "position": "after"
+          },
+          {
+            "pattern": "@/styles/**",
+            "group": "object",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react",
+          "@packages"
+        ],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ]
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "includeTypes": true,
+        "includeInternal": true,
+        "devDependencies": [
+          "**/vite.config.ts",
+          "**/*.spec.ts{,x}",
+          "**/*.test.ts{,x}",
+          "**/*.stories.ts{,x}",
+          "**/spec/**"
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [ "**/*.stories.ts{,x}", "**/stories/**/*" ],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "no-alert": 0
+      }
+    }
+  ]
+}

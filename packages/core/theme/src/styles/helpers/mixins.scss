@@ -1,0 +1,191 @@
+/* stylelint-disable media-query-no-invalid */
+@use "sass:map";
+@use "sass:math";
+@use "sass:color";
+@import "./colors";
+
+$breakpoints: (
+  xs: 320px,
+  sm: 768px,
+  md: 960px,
+  lg: 1200px,
+  xl: 1536px,
+);
+$htmlFontSize: 16px;
+
+@function stripUnit($value) {
+  @return math.div($value, $value * 0 + 1);
+}
+
+@function rem($pxValue) {
+  @return #{math.div(stripUnit($pxValue), stripUnit($htmlFontSize))}rem;
+}
+
+@function colorRgba($hexColor, $opacity) {
+  @return rgba(
+    color.red($hexColor),
+    color.green($hexColor),
+    color.blue($hexColor),
+    $opacity,
+  );
+}
+
+@mixin dark {
+  body.dark {
+    @content;
+  }
+}
+
+@mixin cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@mixin respond($breakpoint) {
+  @media screen and (max-width: #{map.get($breakpoints, $breakpoint)} ) {
+    @content;
+  }
+}
+
+@mixin respondFrom($breakpoint) {
+  @media screen and (min-width: #{map.get($breakpoints, $breakpoint)} ) {
+    @content;
+  }
+}
+
+@mixin rDesktopLarge {
+  @media only screen and (max-width: "1439px") {
+    @content;
+  }
+}
+
+@mixin rDesktop {
+  @media only screen and (max-width: "1199px") {
+    @content;
+  }
+}
+
+@mixin rTablet {
+  @media only screen and (max-width: "1023px") {
+    @content;
+  }
+}
+
+@mixin rMobile {
+  @media only screen and (max-width: "767px") {
+    @content;
+  }
+}
+
+@mixin placeholderColor($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+@mixin placeholderFontFamily($font-family) {
+  &::placeholder {
+    font-family: $font-family;
+  }
+}
+
+@mixin setIconSize($size) {
+  width: $size;
+  height: $size;
+  background-size: $size;
+}
+
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin pseudoElement($pseudoElement: after, $content: '', $position: absolute) {
+  @if  $pseudoElement == all {
+    &:after,
+    &:before {
+      content: $content;
+      position: $position;
+      display: block;
+      @content;
+    }
+  }
+  @else {
+    &:#{$pseudoElement} {
+      content: $content;
+      position: $position;
+      display: block;
+      @content;
+    }
+  }
+}
+
+@mixin fontStyle($family, $size: null, $color: null, $line-height: null) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin visibility($visibility, $opacity) {
+  visibility: $visibility;
+  opacity: $opacity;
+}
+
+@mixin flex($type: default, $display: flex, $direction: null, $align: null, $justify: null) {
+  display: $display;
+  flex-direction: $direction;
+  @if $type == center {
+    justify-content: center;
+    align-items: center;
+  }
+  @else if $type == between-center {
+    justify-content: space-between;
+    align-items: center;
+  }
+  @else if $type == start {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin cssTriangle($color, $direction, $size: 8px, $position: absolute) {
+  @include size(0);
+
+  content: '';
+  position: absolute;
+
+  @if $direction == down {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+    border-bottom: 0;
+  }
+  @else if $direction == up {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+    border-top: 0;
+  }
+  @else if $direction == right {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+  @else if  $direction == left {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+}
+
+@mixin boxShadow($type, $position: top) {
+  @if $type == 1 {
+    box-shadow: 0 4px 24px rgba(var(--color-grayscale800) .12);
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "stn-ui",
+  "private": true,
+  "version": "2.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Yaroslav Romanenko",
+    "email": "yarikrom05@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Storency/stn-ui"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @stn-ui/storybook dev",
+    "build:sb": "pnpm --filter @stn-ui/storybook build",
+    "start:sb": "pnpm --filter @stn-ui/storybook start",
+    "build": "turbo build --filter=!@stn-ui/storybook",
+    "build:fast": "turbo build:fast --filter=!@stn-ui",
+    "typecheck": "turbo typecheck",
+    "lint": "eslint -c .eslintrc.json ./packages/**/**/*.{ts,tsx}",
+    "lint:fix": "eslint --fix -c .eslintrc.json ./packages/**/**/*.{ts,tsx}",
+    "format:check": "prettier --check packages/**/**/src --cache",
+    "format:write": "prettier --write packages/**/**/src --cache",
+    "turbo:clean": "turbo clean && rimraf ./node_modules/.cache/turbo",
+    "turbo:graph": "pnpm build --graph=dependency-graph.png",
+    "clean": "pnpm turbo:clean && pnpm clean:jest && pnpm clean:node-modules && pnpm clean:lock && pnpm install --hoist",
+    "clean:node-modules": "rimraf ./apps/**/node_modules && rimraf ./packages/**/**/node_modules && rm -rf ./node_modules",
+    "clean:lock": "rm ./pnpm-lock.yaml",
+    "version:patch": "pnpm version patch --no-git-tag-version",
+    "version:minor": "pnpm version minor --no-git-tag-version",
+    "version:major": "pnpm version major --no-git-tag-version",
+    "cs:version": "changeset version",
+    "cs:release": "changeset publish",
+    "cs:version:dev": "changeset version --snapshot dev-v2",
+    "cs:release:dev": "changeset publish --snapshot --no-git-tag --tag dev-v2",
+    "stylelint": "pnpm --filter './packages/**/**' stylelint",
+    "postinstall": "husky install && pnpm --filter @stn-ui/theme build"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@storybook/react": "^7.1.1",
+    "@types/node": "^15.12.4",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@wallwhite/eslint-config-react-ts": "^0.1.5",
+    "commitlint-plugin-function-rules": "^1.7.1",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "shelljs": "^0.8.4",
+    "turbo": "1.6.3",
+    "typescript": "^4.9.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
+  "engines": {
+    "node": ">=16.x"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0"
+  }
+}

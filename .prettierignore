@@ -1,0 +1,13 @@
+dist
+node_modules
+plop
+coverage
+.changeset
+.next
+build
+scripts
+pnpm-lock.yaml
+!.commitlintrc.cjs
+!jest.config.js
+!react-shim.js
+!/.storybook
