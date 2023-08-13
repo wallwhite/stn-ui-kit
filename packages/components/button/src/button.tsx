@@ -8,7 +8,7 @@ import React, {
   PropsWithChildren,
   ReactElement,
 } from 'react';
-import NextLink from 'next/link';
+import { Link as CustomLink } from '@stn-ui/link';
 import { Loadable } from '@stn-ui/loadable';
 import { buttonCX, buttonTextCX, buttonIconLeftCX, buttonIconRightCX } from '@stn-ui/theme';
 
@@ -118,7 +118,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, PropsWit
 
     switch (type) {
       case 'link': {
-        const Link = as || NextLink;
+        const Link = as || CustomLink;
 
         if (!Link) return null;
 

@@ -1,6 +1,7 @@
 {
   "name": "@stn-ui/storybook",
   "version": "2.0.0",
+  "private": true,
   "description": "The STN UI react components storybook ",
   "keywords": [
     "storybook"

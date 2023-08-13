@@ -1,6 +1,6 @@
 {
-  "name": "@stn-ui/chat-row",
-  "version": "2.0.0",
+  "name": "@stn-ui/link",
+  "version": "2.0.2",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
@@ -14,12 +14,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/https://github.com/Storency/stn-ui.git",
-    "directory": "packages/components/chat-row"
+    "directory": "packages/components/link"
   },
   "scripts": {
     "build": "pnpm typecheck && vite build",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-    "stylelint": "stylelint \"src/**/*.scss\"",
     "typecheck": "tsc --noEmit",
     "prepack": "clean-package",
     "postpack": "clean-package restore",
@@ -33,17 +32,19 @@
     "react-dom": ">=18"
   },
   "dependencies": {
+    "@react-aria/focus": "^3.14.0",
+    "@react-aria/link": "^3.5.3",
+    "@react-aria/utils": "^3.19.0",
+    "@react-types/link": "^3.4.4",
+    "@react-types/shared": "^3.19.0",
     "@stn-ui/theme": "workspace:*",
-    "object-hash": "^3.0.0"
+    "@stn-ui/react-utils": "workspace:*"
   },
   "devDependencies": {
-    "@types/object-hash": "^3.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.44.0",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "sass": "^1.58.3",
     "typescript": "^4.9.3",
     "vite": "^4.4.9",
     "vite-plugin-dts": "^2.3.0"

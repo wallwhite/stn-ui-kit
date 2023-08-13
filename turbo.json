@@ -30,6 +30,10 @@
     "lint": {
       "outputs": []
     },
+    "stylecheck": {
+      "cache": false,
+      "outputs": []
+    },
     "dev": {
       "cache": false
     },

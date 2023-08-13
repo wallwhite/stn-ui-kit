@@ -36,8 +36,6 @@ export type ImageProps = HTMLAttributes<HTMLImageElement> & {
 export type ImageType = ForwardRefExoticComponent<ImageProps> | ElementType<ImageProps> | 'img';
 
 export interface ContextValue {
-  linkElement: Maybe<LinkType>;
-  imageElement: Maybe<ImageType>;
   sidebar: {
     isExpanded: boolean;
     toggle: () => void;
@@ -47,8 +45,6 @@ export interface ContextValue {
 }
 
 const initialValue: ContextValue = {
-  linkElement: 'a',
-  imageElement: 'img',
   sidebar: {
     isExpanded: true,
     toggle: () => {},
@@ -64,18 +60,12 @@ export interface STNUIProviderProps {
   imageElement?: any;
 }
 
-export const UIProvider: React.FC<PropsWithChildren<STNUIProviderProps>> = ({
-  children,
-  linkElement = 'a',
-  imageElement = 'img',
-}) => {
+export const UIProvider: React.FC<PropsWithChildren<STNUIProviderProps>> = ({ children }) => {
   const [isExpanded, { toggle, on: expandSidebar, off: collapseSidebar }] = useToggleBoolean(true);
 
   return (
     <STNUIContext.Provider
       value={{
-        linkElement,
-        imageElement,
         sidebar: {
           isExpanded,
           toggle,

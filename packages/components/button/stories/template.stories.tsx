@@ -7,21 +7,33 @@ export default {
   tags: ['autodocs'],
   argTypes: {
     type: {
+      control: {
+        type: 'select',
+      },
       name: 'type',
       defaultValue: 'button',
       type: { name: 'enum', required: false, value: ['button', 'link', 'submit'] },
     },
     variant: {
+      control: {
+        type: 'select',
+      },
       name: 'variant',
       defaultValue: 'solid',
       type: { name: 'enum', required: false, value: ['primary', 'ghost', 'secondary'] },
     },
     size: {
+      control: {
+        type: 'select',
+      },
       name: 'size',
       defaultValue: 's',
       type: { name: 'enum', required: false, value: ['m', 'l'] },
     },
     colorScheme: {
+      control: {
+        type: 'select',
+      },
       name: 'colorScheme',
       defaultValue: 'default',
       type: { name: 'enum', required: false, value: ['default', 'dark'] },

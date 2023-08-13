@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+  },
+  "include": ["src", "index.ts"],
+  "exclude": ["src/scripts/**", "src/index.ts.backup"]
+}
