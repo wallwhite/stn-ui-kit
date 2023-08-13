@@ -1,5 +1,11 @@
 # @stn-ui/layout
 
+## 2.0.2
+
+### Patch Changes
+
+- c7d3258: Fixed context
+
 ## 2.0.1
 
 ### Patch Changes
