@@ -34,7 +34,7 @@
     "cs:release": "changeset publish",
     "cs:version:dev": "changeset version --snapshot dev-v2",
     "cs:release:dev": "changeset publish --snapshot --no-git-tag --tag dev-v2",
-    "stylelint": "pnpm --filter './packages/**/**' stylelint",
+    "stylelint": "pnpm --filter @stn-ui/theme stylelint",
     "postinstall": "husky install && pnpm --filter @stn-ui/theme build"
   },
   "devDependencies": {
