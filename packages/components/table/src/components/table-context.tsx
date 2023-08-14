@@ -1,8 +1,10 @@
-import { FC, PropsWithChildren, createContext, useContext, useState } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ElementType, FC, PropsWithChildren, createContext, useContext, useState } from 'react';
 import { useToggleBoolean } from '@stn-ui/use-toggle-boolean';
 import { TableColsConfigItem } from '../types';
 
 export interface TableContextValue {
+  linkAs: Maybe<ElementType<any>>;
   isReady: boolean;
   isColsSet: boolean;
   cols: TableColsConfigItem[];
@@ -14,6 +16,7 @@ export interface TableContextValue {
 }
 
 const initialValue: TableContextValue = {
+  linkAs: null,
   isReady: false,
   isColsSet: false,
   cols: [],
@@ -26,7 +29,11 @@ const initialValue: TableContextValue = {
 
 const TableContext = createContext(initialValue);
 
-export const TableProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
+interface TableProviderProps {
+  linkAs?: ElementType<any>;
+}
+
+export const TableProvider: FC<PropsWithChildren<TableProviderProps>> = ({ children, linkAs }) => {
   const [isReady, { on: tableReady }] = useToggleBoolean(false);
   const [isColsSet, { on: colsSetCompleted }] = useToggleBoolean(false);
   const [cols, setCols] = useState<TableColsConfigItem[]>([]);
@@ -35,6 +42,7 @@ export const TableProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
   return (
     <TableContext.Provider
       value={{
+        linkAs,
         isReady,
         isColsSet,
         cols,
