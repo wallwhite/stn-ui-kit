@@ -2,16 +2,22 @@ import { FC } from 'react';
 import { Text } from '../src';
 
 export default {
-  title: 'Components/DataDisplay/Text',
+  title: 'Components/Text',
   component: Text,
   tags: ['autodocs'],
   argTypes: {
     type: {
+      control: {
+        type: 'select',
+      },
       name: 'type',
       defaultValue: 'body',
       type: { name: 'enum', required: false, value: ['button', 'body', 'caption'] },
     },
     size: {
+      control: {
+        type: 'select',
+      },
       name: 'size',
       defaultValue: 'm',
       type: { name: 'enum', required: false, value: ['s', 'm', 'l'] },
@@ -22,6 +28,9 @@ export default {
       type: { name: 'boolean', required: false },
     },
     variant: {
+      control: {
+        type: 'select',
+      },
       name: 'variant',
       defaultValue: 'default',
       type: { name: 'enum', required: false, value: ['default', 'link', 'bold', 'black', 'label'] },
