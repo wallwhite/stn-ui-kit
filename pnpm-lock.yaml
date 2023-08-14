@@ -593,6 +593,49 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(@types/node@15.12.4)(vite@4.4.9)
 
+  packages/components/text:
+    dependencies:
+      '@stn-ui/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
+    devDependencies:
+      '@types/object-hash':
+        specifier: ^3.0.3
+        version: 3.0.3
+      '@vitejs/plugin-react-swc':
+        specifier: ^3.3.2
+        version: 3.3.2(vite@4.4.9)
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      eslint:
+        specifier: ^8.44.0
+        version: 8.44.0
+      framer-motion:
+        specifier: '>=4.0.0'
+        version: 4.0.0(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      rollup-plugin-banner2:
+        specifier: ^1.2.2
+        version: 1.2.2
+      sass:
+        specifier: ^1.58.3
+        version: 1.58.3
+      typescript:
+        specifier: ^4.9.3
+        version: 4.9.5
+      vite:
+        specifier: ^4.4.9
+        version: 4.4.9(@types/node@15.12.4)(less@4.2.0)(sass@1.58.3)
+      vite-plugin-dts:
+        specifier: ^2.3.0
+        version: 2.3.0(@types/node@15.12.4)(vite@4.4.9)
+
   packages/core/react:
     dependencies:
       '@stn-ui/avatar':
@@ -2580,12 +2623,10 @@ packages:
     requiresBuild: true
     dependencies:
       '@emotion/memoize': 0.7.4
-    dev: false
     optional: true
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
-    dev: false
     optional: true
 
   /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.2.0):
@@ -8105,11 +8146,9 @@ packages:
       tslib: 2.6.1
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
-    dev: false
 
   /framesync@5.2.0:
     resolution: {integrity: sha512-dcl92w5SHc0o6pRK3//VBVNvu6WkYkiXmHG6ZIXrVzmgh0aDYMDAaoA3p3LH71JIdN5qmhDcfONFA4Lmq22tNA==}
-    dev: false
 
   /fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
@@ -8487,7 +8526,6 @@ packages:
 
   /hey-listen@1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
-    dev: false
 
   /hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
@@ -10394,7 +10432,6 @@ packages:
       hey-listen: 1.0.8
       style-value-types: 4.1.1
       tslib: 1.14.1
-    dev: false
 
   /postcss-loader@7.3.3(postcss@8.4.27)(webpack@5.88.2):
     resolution: {integrity: sha512-YgO/yhtevGO/vJePCQmTxiaEwER94LABZN0ZMT4A0vsak9TpO+RvKRs7EmJ8peIlB9xfXCsS7M8LjqncsUZ5HA==}
@@ -11787,7 +11824,6 @@ packages:
     dependencies:
       hey-listen: 1.0.8
       tslib: 1.14.1
-    dev: false
 
   /stylelint-config-prettier@9.0.5(stylelint@15.10.2):
     resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
