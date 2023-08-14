@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.5
+
+### Patch Changes
+
+- e339604: add styles for text component
+
 ## 2.0.4
 
 ### Patch Changes
