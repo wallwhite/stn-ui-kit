@@ -5,11 +5,11 @@ export interface DashboardLayoutClassNamesInput {
   isExpanded: boolean;
 }
 
-export const dashboardLayoutCX = ({ isExpanded }: DashboardLayoutClassNamesInput, classNames?: Maybe<string>): string =>
-  cx(styles.wrapper, classNames, {
-    [styles.expanded]: isExpanded,
-  });
-
-export const dashboardLayoutContentWrapperCX = (): string => cx(styles.contentWrapper);
-
-export const dashboardLayoutContentCX = (): string => cx(styles.content);
+export const dashboardLayoutCX = {
+  layout: ({ isExpanded }: DashboardLayoutClassNamesInput, classNames?: Maybe<string>): string =>
+    cx(styles.wrapper, classNames, {
+      [styles.expanded]: isExpanded,
+    }),
+  contentWrapper: (): string => cx(styles.contentWrapper),
+  content: (): string => cx(styles.content),
+};

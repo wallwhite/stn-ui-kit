@@ -68,7 +68,7 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args: ObjectLiteral) => <Button {...args} />;
 
 export const Default = Template.bind({});
 

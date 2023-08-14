@@ -5,7 +5,9 @@ export interface LoaderClassNamesInput {
   inline: boolean;
 }
 
-export const loaderCX = ({ inline }: LoaderClassNamesInput, classNames?: Maybe<string>): string =>
-  cx(styles.icon, classNames, {
-    [styles.inline]: inline,
-  });
+export const loaderCX = {
+  loader: ({ inline }: LoaderClassNamesInput, classNames?: Maybe<string>): string =>
+    cx(styles.icon, classNames, {
+      [styles.inline]: inline,
+    }),
+};

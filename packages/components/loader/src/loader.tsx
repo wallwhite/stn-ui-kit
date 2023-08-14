@@ -9,7 +9,7 @@ export interface LoaderProps {
 }
 
 export const Loader: React.FC<LoaderProps> = ({ size = 64, inline, className }) => {
-  const iconClassName = loaderCX({ inline: !!inline }, className);
+  const iconClassName = loaderCX.loader({ inline: !!inline }, className);
 
   return (
     <div className={iconClassName}>
