@@ -1,5 +1,11 @@
 # @stn-ui/provider
 
+## 2.0.3
+
+### Patch Changes
+
+- @stn-ui/use-toggle-boolean@2.0.2
+
 ## 2.0.2
 
 ### Patch Changes
