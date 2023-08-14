@@ -3,3 +3,5 @@ export * from './button';
 export * from './loader';
 export * from './loadable';
 export * from './dashboard-layout';
+export * from './table';
+export * from './chat-row';

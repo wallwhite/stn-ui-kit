@@ -1,6 +1,6 @@
 import React from 'react';
 import { Loader } from '@stn-ui/loader';
-import { overlayCX } from '@stn-ui/theme';
+import { loadableCX } from '@stn-ui/theme';
 
 export interface Loadable {
   className?: string;
@@ -31,7 +31,7 @@ export const Loadable: React.FC<React.PropsWithChildren<Loadable>> = ({
   if (isOverlay && isLoading) {
     return (
       <>
-        <OverlayElement className={overlayCX()}>{children}</OverlayElement>
+        <OverlayElement className={loadableCX.overlay()}>{children}</OverlayElement>
         {loaderElement}
       </>
     );

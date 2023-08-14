@@ -1,0 +1,134 @@
+/* stylelint-disable scss/at-extend-no-missing-placeholder */
+@import "helpers";
+
+.chatItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+
+  .icon {
+      @include size(40px);
+
+      font-size: 24px;
+      border-radius: 12px;
+      overflow: hidden;
+
+      @include rMobile {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+      }
+  }
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  color: #141718;
+  font-weight: 600;
+
+  @include rMobile {
+    font-size: 16px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 300px;
+  }
+}
+
+.date {
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  color: var(--color-grayscale600);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+
+  @include rTablet {
+      max-width: auto;
+  }
+}
+
+.message {
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 400;
+  overflow: hidden;
+  color: #6C7275;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+
+  @include rTablet {
+      max-width: auto;
+  }
+}
+
+.tag {
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  border-radius: 8px;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  overflow: hidden;
+
+  .tagBody {
+    display: inline;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include rTablet {
+      font-size: 12px;
+    }
+  }
+}
+
+.counter {
+  @extend .tag;
+
+  justify-content: space-between;
+  background: #E8ECEF;
+  width: fit-content;
+  color: #141718;
+
+  svg {
+    color: #6C7275;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+  }
+}

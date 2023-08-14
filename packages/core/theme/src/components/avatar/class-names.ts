@@ -8,13 +8,12 @@ export interface AvatarClassNamesInput {
   isBordered: boolean;
 }
 
-export const avatarCX = (
-  { type, size, isLoading, isBordered }: AvatarClassNamesInput,
-  classNames?: Maybe<string>,
-): string =>
-  cx(styles.messageAvatar, classNames, {
-    [styles[`type-${type}`]]: type,
-    [styles[`size-${size}`]]: size,
-    [styles.loading]: isLoading,
-    [styles.bordered]: isBordered,
-  });
+export const avatarCX = {
+  avatar: ({ type, size, isLoading, isBordered }: AvatarClassNamesInput, classNames?: Maybe<string>): string =>
+    cx(styles.messageAvatar, classNames, {
+      [styles[`type-${type}`]]: type,
+      [styles[`size-${size}`]]: size,
+      [styles.loading]: isLoading,
+      [styles.bordered]: isBordered,
+    }),
+};

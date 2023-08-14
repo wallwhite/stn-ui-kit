@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren, ReactNode, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useSidebarContext } from '@stn-ui/provider';
-import { dashboardLayoutCX, dashboardLayoutContentCX, dashboardLayoutContentWrapperCX } from '@stn-ui/theme';
+import { dashboardLayoutCX } from '@stn-ui/theme';
 
 export interface DashboardLayoutProps {
   sidebar?: ReactNode;
@@ -17,7 +17,7 @@ export const DashboardLayout: FC<PropsWithChildren<DashboardLayoutProps>> = ({ s
     query: '(max-width: 768px)',
   });
 
-  const layoutClassNames = dashboardLayoutCX({ isExpanded });
+  const layoutClassNames = dashboardLayoutCX.layout({ isExpanded });
 
   useEffect(() => {
     if (isDesktop) expandSidebar();
@@ -28,8 +28,8 @@ export const DashboardLayout: FC<PropsWithChildren<DashboardLayoutProps>> = ({ s
   return (
     <div className={layoutClassNames}>
       {sidebar}
-      <div className={dashboardLayoutContentWrapperCX()}>
-        <div className={dashboardLayoutContentCX()}>{children}</div>
+      <div className={dashboardLayoutCX.contentWrapper()}>
+        <div className={dashboardLayoutCX.content()}>{children}</div>
       </div>
     </div>
   );

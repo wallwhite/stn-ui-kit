@@ -10,7 +10,7 @@ import React, {
 } from 'react';
 import { Link as CustomLink } from '@stn-ui/link';
 import { Loadable } from '@stn-ui/loadable';
-import { buttonCX, buttonTextCX, buttonIconLeftCX, buttonIconRightCX } from '@stn-ui/theme';
+import { buttonCX } from '@stn-ui/theme';
 
 export type HTMLButtonProps = Omit<HTMLAttributes<HTMLButtonElement>, 'type' | 'disabled'>;
 
@@ -71,7 +71,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, PropsWit
       ...restProps
     } = props;
 
-    const buttonClassNames = buttonCX(
+    const buttonClassNames = buttonCX.button(
       {
         isWide: !!isWide,
         isLoading: !!isLoading,
@@ -85,7 +85,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, PropsWit
     );
 
     const renderContent = (): React.ReactNode => {
-      const textClassName = buttonTextCX({ isIconOnly: !!isIconOnly });
+      const textClassName = buttonCX.text({ isIconOnly: !!isIconOnly });
 
       const isShowLeftIcon = !!leftIcon && !isIconOnly;
       const isShowRightIcon = !!rightIcon && !isIconOnly;
@@ -93,9 +93,9 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, PropsWit
       return (
         <>
           <Loadable isLoading={isLoading} loaderSize={24} overlayAs="span" isOverlay>
-            {isShowLeftIcon && <span className={buttonIconLeftCX()}>{leftIcon}</span>}
+            {isShowLeftIcon && <span className={buttonCX.iconLeft()}>{leftIcon}</span>}
             <span className={textClassName}>{children}</span>
-            {isShowRightIcon && <span className={buttonIconRightCX()}>{rightIcon}</span>}
+            {isShowRightIcon && <span className={buttonCX.iconRight()}>{rightIcon}</span>}
           </Loadable>
         </>
       );

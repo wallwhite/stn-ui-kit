@@ -41,6 +41,17 @@ export const Avatar: FC<AvatarProps> = ({
 }) => {
   const iconString = icon ? renderToString(icon as ReactElement) : '';
   const avatarHash = hash({ title, type, size, className, iconString }, { algorithm: 'md5' });
+
+  const avatarClassNames = avatarCX.avatar(
+    {
+      size,
+      type,
+      isBordered: !!isBordered,
+      isLoading: !!isLoading,
+    },
+    className,
+  );
+
   const avatarStyles = useMemo(() => {
     if (isLoading) return {};
     if (customColor) return { backgroundColor: customColor };
@@ -66,18 +77,7 @@ export const Avatar: FC<AvatarProps> = ({
   }, [title, icon]);
 
   return (
-    <div
-      className={avatarCX(
-        {
-          size,
-          type,
-          isBordered: !!isBordered,
-          isLoading: !!isLoading,
-        },
-        className,
-      )}
-      style={avatarStyles}
-    >
+    <div className={avatarClassNames} style={avatarStyles}>
       {avatarContent}
     </div>
   );
