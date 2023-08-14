@@ -1,5 +1,15 @@
 # @stn-ui/button
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [e339604]
+  - @stn-ui/theme@2.0.5
+  - @stn-ui/avatar@2.0.4
+  - @stn-ui/icons@2.0.3
+  - @stn-ui/table@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @stn-ui/react
 
+## 2.0.6
+
+### Patch Changes
+
+- @stn-ui/avatar@2.0.4
+- @stn-ui/icons@2.0.3
+- @stn-ui/loadable@2.0.3
+- @stn-ui/loader@2.0.3
+- @stn-ui/provider@2.0.4
+
 ## 2.0.5
 
 ### Patch Changes
