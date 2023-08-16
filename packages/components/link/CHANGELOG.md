@@ -1,5 +1,12 @@
 # @stn-ui/link
 
+## 2.0.7
+
+### Patch Changes
+
+- Updated dependencies [491eb09]
+  - @stn-ui/theme@2.0.7
+
 ## 2.0.6
 
 ### Patch Changes

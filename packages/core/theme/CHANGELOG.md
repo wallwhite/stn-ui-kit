@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.7
+
+### Patch Changes
+
+- 491eb09: update sidebar toggle color
+
 ## 2.0.6
 
 ### Patch Changes

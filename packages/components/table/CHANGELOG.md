@@ -1,5 +1,13 @@
 # @stn-ui/button
 
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [491eb09]
+  - @stn-ui/theme@2.0.7
+  - @stn-ui/link@2.0.7
+
 ## 2.0.3
 
 ### Patch Changes
