@@ -14,10 +14,65 @@ This is the Snt UI library project, which includes common UI components, hooks, 
   documentation, changelog generation, and release management.
 
 
-## Structure
+### Structure
 
 The project is divided into several packages, each with the `@stn-ui/**` namespace:
 
+## Usage
+
+The STN UI library is a comprehensive set of components and utilities designed to help you build efficient and consistent user interfaces. Below is a guide on how to import and use each package:
+
+### Installation
+To install a package, use the following command:
+
+```
+npm install @stn-ui/[package-name]
+# or
+yarn add @stn-ui/[package-name]
+```
+
+Replace `[package-name]`` with the name of the desired package.
+
+### Available Packages
+```
+# All components together
+npm install @stn-ui/react
+
+# Theme
+npm install @stn-ui/theme
+
+# Components
+npm install @stn-ui/avatar
+npm install @stn-ui/button
+npm install @stn-ui/chat-row
+npm install @stn-ui/chats-navigation
+npm install @stn-ui/color-avatar
+npm install @stn-ui/form
+npm install @stn-ui/forms
+npm install @stn-ui/heading
+npm install @stn-ui/icons
+npm install @stn-ui/inputs
+npm install @stn-ui/layout
+npm install @stn-ui/link
+npm install @stn-ui/loadable
+npm install @stn-ui/loader
+npm install @stn-ui/logo
+npm install @stn-ui/messages
+npm install @stn-ui/modal
+npm install @stn-ui/navigation
+npm install @stn-ui/pagination
+npm install @stn-ui/provider
+npm install @stn-ui/sidebar
+npm install @stn-ui/switcher
+npm install @stn-ui/table
+npm install @stn-ui/text
+npm install @stn-ui/toasts
+
+# Utilities
+npm install @stn-ui/common-utils
+npm install @stn-ui/react-utils
+npm install @stn-ui/use-toggle-boolean
+```
 
 ### Development Setup
 
