@@ -1,5 +1,16 @@
 # @stn-ui/layout
 
+## 2.0.5
+
+### Patch Changes
+
+- 0cb105f: Added a bunch of components
+- Updated dependencies [0cb105f]
+  - @stn-ui/provider@2.0.5
+  - @stn-ui/text@2.0.2
+  - @stn-ui/theme@2.0.6
+  - @stn-ui/heading@2.0.1
+
 ## 2.0.4
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @stn-ui/use-toggle-boolean
 
+## 2.0.4
+
+### Patch Changes
+
+- 0cb105f: Added a bunch of components
+
 ## 2.0.3
 
 ### Patch Changes

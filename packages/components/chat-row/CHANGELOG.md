@@ -1,5 +1,16 @@
 # @stn-ui/button
 
+## 2.0.3
+
+### Patch Changes
+
+- 0cb105f: Added a bunch of components
+- Updated dependencies [0cb105f]
+  - @stn-ui/avatar@2.0.5
+  - @stn-ui/icons@2.0.4
+  - @stn-ui/table@2.0.3
+  - @stn-ui/theme@2.0.6
+
 ## 2.0.2
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @stn-ui/link
 
+## 2.0.6
+
+### Patch Changes
+
+- 0cb105f: Added a bunch of components
+- Updated dependencies [0cb105f]
+  - @stn-ui/react-utils@2.0.3
+  - @stn-ui/theme@2.0.6
+
 ## 2.0.5
 
 ### Patch Changes

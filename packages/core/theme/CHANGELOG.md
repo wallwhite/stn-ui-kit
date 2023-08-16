@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.6
+
+### Patch Changes
+
+- 0cb105f: Added a bunch of components
+
 ## 2.0.5
 
 ### Patch Changes

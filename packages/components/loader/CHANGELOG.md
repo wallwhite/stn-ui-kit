@@ -1,5 +1,14 @@
 # @stn-ui/loader
 
+## 2.0.4
+
+### Patch Changes
+
+- 0cb105f: Added a bunch of components
+- Updated dependencies [0cb105f]
+  - @stn-ui/icons@2.0.4
+  - @stn-ui/theme@2.0.6
+
 ## 2.0.3
 
 ### Patch Changes
