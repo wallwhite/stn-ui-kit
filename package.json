@@ -35,6 +35,7 @@
     "version:dev": "changeset version --snapshot dev-v2",
     "release:dev": "changeset publish --snapshot --no-git-tag --tag dev-v2",
     "stylecheck": "turbo stylecheck",
+    "changes:add": "changeset add",
     "postinstall": "husky install && pnpm --filter @stn-ui/theme build"
   },
   "devDependencies": {

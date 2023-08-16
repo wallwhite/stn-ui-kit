@@ -27,16 +27,11 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
-    "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18"
   },
-  "dependencies": {
-    "@stn-ui/theme": "workspace:*",
-    "object-hash": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/object-hash": "^3.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.44.0",
     "clean-package": "2.2.0",

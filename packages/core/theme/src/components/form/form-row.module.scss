@@ -1,0 +1,21 @@
+@import 'helpers';
+
+.formRow {
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 32px;
+  gap: 32px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.split {
+  grid-template-columns: repeat(2, calc(50% - 16px));
+
+  @include rMobile {
+    grid-template-columns: 1fr;
+  }
+}

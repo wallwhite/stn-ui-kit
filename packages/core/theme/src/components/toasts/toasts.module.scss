@@ -1,0 +1,131 @@
+/* stylelint-disable no-descending-specificity */
+@import 'helpers';
+
+.toast {
+  @include boxShadow(1);
+  @include flex($direction: row, $align: center, $justify: space-between);
+
+  gap: 12px;
+  position: relative;
+  width: 100%;
+  padding: rem(16px);
+  border-radius: rem(16px);
+  text-align: left;
+  opacity: 0;
+  z-index: 2;
+
+  .close {
+
+    @include visibility(hidden, 0);
+
+    border-radius: 50%;
+    background: colorRgba($grayscale100, 0.2);
+    cursor: pointer;
+
+    svg {
+      @include size(100%);
+    }
+
+    &:hover {
+      background: colorRgba($grayscale100, 0.4);
+    }
+  }
+
+  &:hover {
+    .close {
+      @include visibility(visible, 1);
+    }
+  }
+
+  &.danger {
+    background: var(--color-error500);
+    color: var(--color-grayscale100);
+
+    .close {
+      color: var(--color-grayscale100);
+
+      &:hover {
+        color: var(--color-error500);
+      }
+    }
+  }
+
+  &.success {
+    background: var(--color-success500);
+    color: var(--color-grayscale100);
+
+    .close {
+      color: var(--color-grayscale100);
+
+      &:hover {
+        color: var(--color-success500);
+      }
+    }
+  }
+
+  &.warning {
+    background: var(--color-warning500);
+    color:var(--color-grayscale100);
+
+    .close {
+      color: var(--color-grayscale100);
+
+      &:hover {
+        color: var(--color-warning500);
+      }
+    }
+  }
+
+  &.loading,
+  &.attention {
+    background: var(--color-grayscale100);
+    color:var(--color-grayscale800);
+
+    .close {
+      background: colorRgba($grayscale900, 0.1);
+      color: $grayscale800;
+
+      &:hover {
+        background: colorRgba($grayscale900, 0.2);
+      }
+    }
+  }
+}
+
+.icon {
+  @include size(20px);
+
+  flex-shrink: 0;
+  margin-right: rem(20px);
+}
+
+.message {
+  @include flex($direction: column, $align: flex-start);
+
+  flex-grow: 1;
+  font-size: rem(14px);
+  line-height: 1.5;
+  max-width: 100%;
+  white-space: pre-wrap;
+  margin-right: rem(16px);
+}
+
+.body {
+  @include flex($align: center);
+
+  flex: 1;
+  width: auto;
+  position: relative;
+}
+
+.container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

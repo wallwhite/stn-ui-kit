@@ -1,0 +1,50 @@
+/* stylelint-disable no-descending-specificity */
+@import 'helpers';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  .radioCard {
+    position: relative;
+    display: flex;
+    padding: 8px;
+    background: #F3F5F7;
+    border-radius: 16px;
+    transition: all .2s;
+    border: 2px solid transparent;
+
+    &:hover:not(:has(input[type="radio"]:checked), :has(input[type="radio"]:disabled)) {
+      background: #F4FAFF;
+      box-shadow: 0 0 0 1px colorRgba($primary500, 0.5);
+    }
+
+    &.error {
+      box-shadow: 0 0 0 1px colorRgba($error500, 0.5);
+    }
+
+    &:has(input[type="radio"]:checked) {
+      background: var(--color-contrast-white);
+      border: 2px solid var(--color-primary500);
+    }
+
+    &:has(input[type="radio"]:disabled) {
+      background: var(--color-grayscale300);
+      color: var(--color-grayscale600)
+    }
+  }
+
+  .marker {
+    @include size(1px);
+
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+  }
+}

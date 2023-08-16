@@ -1,3 +1,3 @@
 export * from './link';
-export * from './link-icon';
+export * from './external-link-icon';
 export * from './use-link';

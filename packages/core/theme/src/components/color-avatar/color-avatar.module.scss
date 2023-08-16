@@ -1,0 +1,12 @@
+@import 'helpers';
+
+.wrapper {
+  width: 100%;
+  flex-grow: 1;
+
+  .colorAvatar {
+    @include size(18px);
+
+    border-radius: 4px;
+  }
+}

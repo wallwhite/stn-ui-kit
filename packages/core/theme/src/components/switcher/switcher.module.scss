@@ -1,0 +1,33 @@
+.switcher {
+  display: flex;
+  background: var(--color-grayscale200);
+  padding: 4px;
+  border-radius: 12px;
+  gap: 8px;
+}
+
+.switcherItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  height: 40px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  font-family: var(--font-inter);
+  color: var(--color-grayscale800);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover:not(.active) {
+    color: var(--color-grayscale950)
+  }
+
+  &.active {
+    color: var(--color-grayscale950);
+    background: var(--color-contrast-white);
+    box-shadow: rgb(0 0 0 / 0%) 0 0 0 0, rgb(0 0 0 / 0%) 0 0 0 0, rgb(0 0 0 / 7%) 0 2px 2px 0, rgb(255 255 255) 0 4px 2px 0 inset;
+  }
+}

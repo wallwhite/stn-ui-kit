@@ -1,0 +1,55 @@
+{
+  "name": "@stn-ui/toasts",
+  "version": "2.0.0",
+  "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Storency/stn-ui.git",
+    "directory": "packages/components/toasts"
+  },
+  "scripts": {
+    "build": "pnpm typecheck && vite build",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore",
+    "version:patch": "pnpm version patch --no-git-tag-version",
+    "version:minor": "pnpm version minor --no-git-tag-version",
+    "version:major": "pnpm version major --no-git-tag-version"
+  },
+  "peerDependencies": {
+    "framer-motion": "^10.15.0",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@stn-ui/button": "workspace:*",
+    "@stn-ui/icons": "workspace:*",
+    "@stn-ui/theme": "workspace:*",
+    "@stn-ui/react-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/object-hash": "^3.0.3",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "clean-package": "2.2.0",
+    "eslint": "^8.44.0",
+    "framer-motion": "^10.15.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rollup-plugin-banner2": "^1.2.2",
+    "sass": "^1.58.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

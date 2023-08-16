@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-export const LinkIcon: FC<{ className?: string }> = ({ className = '' }) => (
+export const ExternalAnchorLinkIcon: FC<{ className?: string }> = ({ className = '' }) => (
   <svg
     aria-hidden="true"
     className={className}

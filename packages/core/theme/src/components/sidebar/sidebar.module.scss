@@ -1,0 +1,94 @@
+@import 'helpers';
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 16px;
+  background-color: var(--color-contrast-black);
+  width: 6rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  overflow: hidden;
+
+  &.expanded {
+    width: 20rem;
+  }
+
+  @include rMobile {
+    top: inherit;
+    bottom: 0;
+    width: 100vw;
+    height: 96px;
+    padding: 0 24px;
+
+    &.expanded {
+      width: 100vw;
+    }
+  }
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7.5rem;
+  top: 0;
+  left: 0;
+  padding: 0 28px;
+  gap: 16px;
+
+  &.expanded {
+    justify-content: space-between;
+  }
+  @include rMobile {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  gap: 24px;
+
+  @include rMobile {
+    gap: 24px;
+    flex-direction: row;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0 16px 24px;
+}
+
+.toggle {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+
+  svg {
+    fill: var(--color-contrast-white);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255 255 255 / 10%);
+}

@@ -29,16 +29,34 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
-    "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
     "@stn-ui/avatar": "workspace:*",
+    "@stn-ui/button": "workspace:*",
+    "@stn-ui/chat-row": "workspace:*",
+    "@stn-ui/chats-navigation": "workspace:*",
+    "@stn-ui/color-avatar": "workspace:*",
+    "@stn-ui/form": "workspace:*",
+    "@stn-ui/heading": "workspace:*",
     "@stn-ui/icons": "workspace:*",
+    "@stn-ui/inputs": "workspace:*",
+    "@stn-ui/layout": "workspace:*",
+    "@stn-ui/link": "workspace:*",
     "@stn-ui/loadable": "workspace:*",
     "@stn-ui/loader": "workspace:*",
+    "@stn-ui/logo": "workspace:*",
+    "@stn-ui/messages": "workspace:*",
+    "@stn-ui/modal": "workspace:*",
+    "@stn-ui/navigation": "workspace:*",
+    "@stn-ui/pagination": "workspace:*",
     "@stn-ui/provider": "workspace:*",
+    "@stn-ui/sidebar": "workspace:*",
+    "@stn-ui/switcher": "workspace:*",
+    "@stn-ui/table": "workspace:*",
+    "@stn-ui/text": "workspace:*",
+    "@stn-ui/toasts": "workspace:*",
     "object-hash": "^3.0.0"
   },
   "devDependencies": {
