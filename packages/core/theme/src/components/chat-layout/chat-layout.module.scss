@@ -1,0 +1,59 @@
+@import 'helpers';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 72px;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgb(232 236 239);
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: auto;
+  font-family: var(--font-inter);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -.03em;
+
+  @include rMobile {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-weight: 600;
+    letter-spacing: -.03em
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action {
+  @include size(32px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    @include size(24px);
+
+    color: var(--color-grayscale700);
+    fill: var(--color-grayscale700);
+    transition: all .2s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      color: var(--color-primary300);
+      fill: var(--color-primary300);
+    }
+  }
+}

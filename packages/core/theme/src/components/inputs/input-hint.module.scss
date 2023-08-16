@@ -1,0 +1,23 @@
+@import "helpers";
+
+.inputHint {
+  color: var(--color-grayscale800);
+  letter-spacing: 0.4px;
+  margin-top: 5px;
+
+  &.error {
+    color: var(--color-error500);
+  }
+
+  &.warning {
+    color: var(--color-warning500);
+  }
+
+  &.success {
+    color: var(--color-success500);
+  }
+
+  &.disabled {
+    color: var(--color-grayscale600);
+  }
+}

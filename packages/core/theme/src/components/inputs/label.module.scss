@@ -1,0 +1,21 @@
+.label {
+  display: flex;
+  width: fit-content;
+  text-transform: none;
+
+  .labelText {
+    color: var(--color-grayscale800);
+    text-transform: none;
+  }
+}
+
+.wide {
+  width: 100%;
+}
+
+.labelContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

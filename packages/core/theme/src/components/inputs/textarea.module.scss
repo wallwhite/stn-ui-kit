@@ -1,0 +1,137 @@
+/* stylelint-disable no-descending-specificity */
+@import 'helpers';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.label {
+  color: var(--color-grayscale600);
+  cursor: text;
+}
+
+.textareaElement {
+  @include size(100%);
+
+  resize: none;
+  display: inline-flex;
+  background: transparent;
+  color: var(--color-grayscale900);
+  border: none;
+  margin: 0;
+  padding: 0 16px;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-grayscale600);
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+.textareaPseudo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  height: fit-content;
+  min-height: 48px;
+  margin: 0;
+  background: var(--color-contrast-white);
+  border: 2px solid var(--color-grayscale300);
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: all .2s;
+  overflow: hidden;
+
+  &:has(textarea:hover:not(textarea:disabled)) {
+    border-color: var(--color-grayscale600);
+  }
+
+  &:has(textarea:focus:not(textarea:disabled)) {
+    border-color: var(--color-primary500);
+  }
+
+  &:has(textarea:active:not(textarea:disabled)) {
+    border-color: var(--color-primary500);
+  }
+
+  &:has(textarea:disabled) {
+    background-color: var(--color-grayscale200);
+  }
+
+  &.error {
+    border-color: var(--color-error500);
+  }
+
+  &.warning {
+    border-color: var(--color-warning500);
+  }
+
+  &.success {
+    border-color: var(--color-success500);
+
+    .textareaElement {
+      padding-right: 40px;
+    }
+  }
+
+  &.scale {
+    &-s {
+      min-height: 32px;
+      padding: 2px 0;
+
+      .textareaElement {
+        font-size: rem(12px);
+        letter-spacing: rem(0.6px);
+
+        &::placeholder {
+          -webkit-text-stroke-width: 0;
+          letter-spacing: rem(0.2px);
+        }
+      }
+    }
+
+    &-m {
+      min-height: 48px;
+      padding: 8px 0;
+
+      .textareaElement {
+        font-size: rem(14px);
+        letter-spacing: rem(0.7px);
+
+        &::placeholder {
+          -webkit-text-stroke-width: 0;
+          letter-spacing: rem(0.3px);
+        }
+      }
+    }
+  }
+}
+
+.textareaWrapper {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.addonElement {
+  display: inline-flex;
+  position: relative;
+  width: max-content;
+  flex-grow: 1;
+}

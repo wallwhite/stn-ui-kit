@@ -1,0 +1,41 @@
+@import 'helpers';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.header {
+  margin-bottom: 64px;
+  text-align: center;
+  @include rMobile {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    margin-bottom: 14px;
+    line-height: 1.2;
+
+    @include rTablet {
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+    @include rMobile {
+      font-size: 24px;
+    }
+  }
+
+  .subtitle {
+    color: var(--color-grayscale700);
+    font-size: 20px;
+
+    @include rTablet {
+      font-size: 15px;
+      line-height: 1.2;
+    }
+  }
+}

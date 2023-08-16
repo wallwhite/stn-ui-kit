@@ -12,13 +12,6 @@ import { useToggleBoolean } from '@stn-ui/use-toggle-boolean';
 
 type SafeNumber = number | `${number}`;
 
-export type LinkProps = HTMLAttributes<HTMLAnchorElement> & {
-  href: string;
-  locale?: string;
-};
-
-export type LinkType = ForwardRefExoticComponent<LinkProps> | ElementType<LinkProps> | 'a';
-
 export type ImageProps = HTMLAttributes<HTMLImageElement> & {
   src: string;
   alt: string;

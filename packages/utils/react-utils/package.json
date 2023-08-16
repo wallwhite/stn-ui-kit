@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@react-types/shared": "^3.19.0",
+    "@types/blueimp-md5": "^2.18.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "clean-package": "2.2.0",
     "eslint": "^8.44.0",
@@ -42,5 +43,8 @@
     "vite": "^4.4.9",
     "vite-plugin-dts": "^2.3.0"
   },
-  "clean-package": "../../../clean-package.config.json"
+  "clean-package": "../../../clean-package.config.json",
+  "dependencies": {
+    "blueimp-md5": "^2.19.0"
+  }
 }

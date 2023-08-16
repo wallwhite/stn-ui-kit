@@ -28,12 +28,13 @@
   },
   "peerDependencies": {
     "@stn-ui/provider": "workspace:*",
-    "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
     "@stn-ui/theme": "workspace:*",
+    "@stn-ui/heading": "workspace:*",
+    "@stn-ui/text": "workspace:*",
     "object-hash": "^3.0.0",
     "react-responsive": "^9.0.2"
   },

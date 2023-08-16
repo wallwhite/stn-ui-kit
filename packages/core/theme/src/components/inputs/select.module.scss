@@ -1,0 +1,198 @@
+@use "sass:map";
+@import 'helpers';
+
+$sizeKeys: 's', 'm', 'l';
+$selectSizeHorizontal: (
+  s: 32px,
+  m:  40px,
+  l:  48px,
+);
+$selectFontSpacing: (
+  s: 0.2px,
+  m: 0.3px,
+  l: 0.4px,
+);
+$selectRadiuses: (
+  s: 8px,
+  m: 12px,
+  l: 12px,
+);
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+
+  @each $size in $sizeKeys {
+    &.scale-#{$size} {
+      .selectOptions {
+        top: map.get($selectSizeHorizontal, $size) + 8px;
+      }
+    }
+  }
+}
+
+.label {
+  color: var(--color-grayscale600);
+  cursor: text;
+}
+
+.selectTrigger {
+  @include size(100%);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--color-grayscale900);
+  height: 48px;
+  margin: 0;
+  padding: 0 16px;
+  font-size: rem(14px);
+  font-family: var(--font-inter);
+  font-weight: 400;
+  outline: none;
+  border: 2px solid var(--color-grayscale300);
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: all .2s;
+  overflow: hidden;
+
+  &:hover {
+    border-color: var(--color-grayscale600);
+  }
+
+  &:focus {
+    border-color: var(--color-primary500);
+  }
+
+  &:active {
+    border-color: var(--color-primary500);
+  }
+
+  &.error {
+    border-color: var(--color-error500);
+  }
+
+  &.warning {
+    border-color: var(--color-warning500);
+  }
+
+  &.success {
+    border-color: var(--color-success500);
+
+    .inputElement {
+      padding-right: 40px;
+    }
+  }
+
+  &.disabled {
+    border-color: var(--color-grayscale300);
+    color: var(--color-grayscale400);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  @each $size in $sizeKeys {
+    &.scale-#{$size} {
+      height: map.get($selectSizeHorizontal, $size);
+      border-radius: map.get($selectRadiuses, $size);
+      letter-spacing: rem(map.get($selectFontSpacing, $size));
+
+      .placeholder {
+        -webkit-text-stroke-width: 0;
+        letter-spacing: rem(0.3px);
+      }
+    }
+  }
+
+  .placeholder,
+  .value {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .placeholder {
+     color: var(--color-grayscale600);
+  }
+
+  .arrowIcon {
+    @include size(24px);
+
+    display: block;
+    position: relative;
+    fill: var(--color-contrast-black);
+    transition: all .3s;
+    margin-left: auto;
+    transform-origin: center;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.addonElement {
+  display: inline-flex;
+  position: relative;
+  width: max-content;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectOptions {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(254 254 254);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: rgb(0 0 0 / 0%) 0 0 0 0, rgb(0 0 0 / 0%) 0 0 0 0, rgb(0 0 0 / 4%) 0 0 16px 4px, rgb(0 0 0 / 10%) 0 32px 32px -24px, rgb(232 236 239) 0 0 0 1px inset;
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 10;
+}
+
+.option {
+  display: flex;
+  width: 100%;
+  font-size: rem(14px);
+}
+
+.optionBody {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-grayscale800);
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 8px;
+  border: 1px solid transparent;
+  transition: all .2s;
+
+  &.active {
+    color: var(--color-grayscale900);
+  }
+
+  &.selected {
+    background: colorRgba($grayscale950, 0.05);
+  }
+
+  &.disabled {
+    background: var(--color-grayscale100);
+    color: var(--color-grayscale500);
+    pointer-events: none;
+  }
+}
+
+.checkIcon {
+  margin-left: auto;
+  fill: var(--color-grayscale800);
+  width: 18px;
+}

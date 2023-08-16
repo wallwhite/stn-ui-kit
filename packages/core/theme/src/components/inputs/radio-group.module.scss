@@ -1,0 +1,11 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  color: var(--color-grayscale600);
+  z-index: 2;
+  cursor: text;
+}

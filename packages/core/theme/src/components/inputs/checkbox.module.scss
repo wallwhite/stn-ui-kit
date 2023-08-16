@@ -1,0 +1,135 @@
+@import "helpers";
+
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    @include size(1px);
+
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+    border: none;
+    padding: 0;
+    margin:  -1px;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .marker {
+    @include size(20px);
+
+    color: var(--color-contrast-white);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all .2s;
+
+    @include pseudoElement("before") {
+      @include size(40px);
+
+      box-sizing: border-box;
+      background-color: var(--color-grayscale100);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.2s ease-in-out;
+    }
+
+    @include pseudoElement("after") {
+      @include size(100%);
+
+      box-sizing: border-box;
+      background-position: center center;
+      border: 1px solid var(--color-grayscale500);
+      border-radius: 5px;
+      transition: all 0.2s ease-in-out;
+      z-index: 1;
+    }
+
+    & > svg {
+      @include size(100%);
+
+      z-index: 2;
+    }
+  }
+
+  &:has(input[type="checkbox"]:disabled) {
+    cursor: not-allowed;
+
+    .marker {
+      @include pseudoElement("after") {
+        border-color: var(--color-grayscale200);
+        background-color:  var(--color-grayscale200);
+      }
+    }
+  }
+
+  &:hover:has(input[type="checkbox"]:not(:disabled)) {
+    .marker {
+      &:before {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  &:has(input[type="checkbox"]:checked:not(:disabled)) {
+    .marker {
+
+      @include pseudoElement("after") {
+        border-color: var(--color-primary500);
+        background-color: var(--color-primary500);
+        box-shadow: 0 2px 8px rgb(23 86 209 / 40%);
+      }
+    }
+  }
+
+  &:has(input[type="checkbox"]:focus:not(:disabled)) {
+    .marker {
+      @include pseudoElement("after") {
+        box-shadow: 0 0 0 2px var(--color-primary100);
+        border-color: var(--color-primary500);
+      }
+    }
+  }
+
+  &.error {
+    /* stylelint-disable-next-line no-descending-specificity */
+    .marker {
+      @include pseudoElement("after") {
+        border-color: var(--color-error500);
+      }
+    }
+
+    &:has(input[type="checkbox"]:checked:not(:disabled)) {
+      .marker {
+
+        @include pseudoElement("after") {
+          border-color: var(--color-error500);
+          background-color: var(--color-error500);
+          box-shadow: 0 2px 8px colorRgba($error500, 0.4);
+        }
+      }
+    }
+
+    &:has(input[type="checkbox"]:focus:not(:disabled)) {
+      .marker {
+        @include pseudoElement("after") {
+          box-shadow: 0 0 0 2px var(--color-error100);
+          border-color: var(--color-error500);
+        }
+      }
+    }
+  }
+}
+
+.hint {
+  z-index: 1;
+}

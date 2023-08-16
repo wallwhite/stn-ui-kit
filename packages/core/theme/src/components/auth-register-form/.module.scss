@@ -1,0 +1,78 @@
+@import 'helpers';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--color-contrast-black);
+  color: var(--color-contrast-white);
+  padding: 40px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: hidden;
+  gap: 80px;
+
+  @include rMobile {
+    padding: 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  gap: 32px;
+  padding: 32px 0;
+  max-width: 40%;
+
+  @include rMobile {
+    display: none;
+  }
+}
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .title {
+    @include rTablet {
+      line-height: 120%;
+      font-size: 38px;
+    }
+  }
+
+  .subtitle {
+    color: var(--color-grayscale500);
+    line-height: 120%;
+    letter-spacing: 0.5px;
+
+    @include rTablet {
+      font-size: 18px;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-image: url('./images/create-pic.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  background: var(--color-contrast-white);
+  color: var(--color-contrast-black);
+  border-radius: 20px;
+  padding: 40px;
+
+  @include rMobile {
+    border-radius: 0;
+  }
+}

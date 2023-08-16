@@ -1,13 +1,23 @@
 # STN UI
 
+This is the Snt UI library project, which includes common UI components, hooks, and utils for building great applications. The project is built using React and TypeScript, and the components are documented in Storybook.
+
+
 ### Tooling
 
+- [Node.js](https://nodejs.org/)
 - [PNPM](https://pnpm.io/) to manage packages and dependencies
 - [Vite](https://vitejs.dev/) to bundle packages
 - [Storybook](https://storybook.js.org/) for rapid UI component development and
   testing
 - [Changeset](https://github.com/atlassian/changesets) for changes
   documentation, changelog generation, and release management.
+
+
+## Structure
+
+The project is divided into several packages, each with the `@stn-ui/**` namespace:
+
 
 ### Development Setup
 
@@ -31,7 +41,6 @@ We use [Turbo Repo](https://turborepo.org/) for the project management.
 ```bash
 pnpm dev ## this will start the storybook server for a faster development and testing.
 ```
-
 
 ### Commit Convention
 

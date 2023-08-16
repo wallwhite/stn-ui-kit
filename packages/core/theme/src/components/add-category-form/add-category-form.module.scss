@@ -1,0 +1,14 @@
+@import 'helpers';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  width: 480px;
+
+  @include rMobile {
+    width: 100%;
+  }
+}

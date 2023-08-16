@@ -1,0 +1,46 @@
+@import 'helpers';
+
+.heading {
+  font-weight: 700;
+  margin: 0;
+}
+
+.variant {
+  &-h1 {
+    font-size: rem(56px);
+    line-height: rem(64px);
+    letter-spacing: rem(0.23px);
+  }
+
+  &-h2 {
+    font-size: rem(48px);
+    line-height: rem(56px);
+    letter-spacing: rem(0.2px);
+  }
+
+  &-h3 {
+    font-size: rem(40px);
+    line-height: rem(44px);
+    letter-spacing: rem(0.15px);
+  }
+
+  &-h4 {
+    font-size: rem(28px);
+    line-height: rem(32px);
+    letter-spacing: rem(0.12px);
+    font-weight: 600;
+  }
+
+  &-h5 {
+    font-size: rem(24px);
+    line-height: rem(36px);
+    letter-spacing: rem(0.1px);
+    font-weight: 600;
+  }
+
+  &-h6 {
+    font-size: rem(18px);
+    line-height: rem(18px);
+    font-weight: 600;
+  }
+}

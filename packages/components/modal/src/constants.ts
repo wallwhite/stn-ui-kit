@@ -1,0 +1,17 @@
+export enum KeyCodes {
+  Enter = 'Enter',
+  Escape = 'Escape',
+  Space = 'Space',
+  ArrowLeft = 'ArrowLeft',
+  ArrowRight = 'ArrowRight',
+  ArrowUp = 'ArrowUp',
+  ArrowDown = 'ArrowDown',
+  Home = 'Home',
+  End = 'End',
+  PageUp = 'PageUp',
+  PageDown = 'PageDown',
+  Tab = 'Tab',
+  Shift = 'Shift',
+  Control = 'Control',
+  Alt = 'Alt',
+}
