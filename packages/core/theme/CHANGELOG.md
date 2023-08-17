@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.8
+
+### Patch Changes
+
+- 041a78a: Add missing components
+
 ## 2.0.7
 
 ### Patch Changes
