@@ -1,5 +1,11 @@
 # @stn-ui/navigation
 
+## 2.0.3
+
+### Patch Changes
+
+- 5f97771: Add possibility to reasign link component in navigation
+
 ## 2.0.2
 
 ### Patch Changes
