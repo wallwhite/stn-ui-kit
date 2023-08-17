@@ -1,4 +1,5 @@
-import React, { FC, HTMLAttributes } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from '@stn-ui/link';
@@ -16,9 +17,12 @@ export interface NavigationProps {
   isExpanded: boolean;
   pathname: string;
   items: NavigationItem[];
+  linkAs?: ElementType<any>;
 }
 
-export const Navigation: FC<NavigationProps> = ({ isExpanded, pathname, items }) => {
+export const Navigation: FC<NavigationProps> = ({ linkAs, isExpanded, pathname, items }) => {
+  const LinkElement = linkAs || Link;
+
   const isMobile = useMediaQuery({
     query: '(max-width: 768px)',
   });
@@ -33,7 +37,7 @@ export const Navigation: FC<NavigationProps> = ({ isExpanded, pathname, items })
       <AnimatePresence initial={false}>
         {items.map(({ url, title, icon: Icon, color, onClick }) =>
           url ? (
-            <Link className={navigationItemClassNames(url)} href={url} key={`${url}-${title}`}>
+            <LinkElement className={navigationItemClassNames(url)} href={url} key={`${url}-${title}`}>
               <Icon style={{ color }} />
               {isExpanded && (
                 <motion.span
@@ -44,7 +48,7 @@ export const Navigation: FC<NavigationProps> = ({ isExpanded, pathname, items })
                   {title}
                 </motion.span>
               )}
-            </Link>
+            </LinkElement>
           ) : (
             <button type="button" className={navigationItemClassNames('')} key={`${url}-${title}`} onClick={onClick}>
               <Icon style={{ color }} />
