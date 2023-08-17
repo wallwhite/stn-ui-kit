@@ -1,5 +1,14 @@
 # @stn-ui/sidebar
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [041a78a]
+  - @stn-ui/theme@2.0.8
+  - @stn-ui/icons@2.0.6
+  - @stn-ui/logo@2.0.3
+
 ## 2.0.2
 
 ### Patch Changes

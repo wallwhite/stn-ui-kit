@@ -1,5 +1,15 @@
 # @stn-ui/layout
 
+## 2.0.7
+
+### Patch Changes
+
+- 041a78a: Add missing components
+- Updated dependencies [041a78a]
+  - @stn-ui/theme@2.0.8
+  - @stn-ui/heading@2.0.3
+  - @stn-ui/text@2.0.4
+
 ## 2.0.6
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @stn-ui/pagination
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [041a78a]
+  - @stn-ui/theme@2.0.8
+  - @stn-ui/button@2.0.13
+  - @stn-ui/icons@2.0.6
+  - @stn-ui/link@2.0.8
+
 ## 2.0.2
 
 ### Patch Changes

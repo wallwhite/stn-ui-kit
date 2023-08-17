@@ -1,5 +1,15 @@
 # @stn-ui/modal
 
+## 2.0.4
+
+### Patch Changes
+
+- Updated dependencies [041a78a]
+  - @stn-ui/theme@2.0.8
+  - @stn-ui/button@2.0.13
+  - @stn-ui/heading@2.0.3
+  - @stn-ui/icons@2.0.6
+
 ## 2.0.3
 
 ### Patch Changes
