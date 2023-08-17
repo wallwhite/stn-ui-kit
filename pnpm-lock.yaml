@@ -115,9 +115,6 @@ importers:
         specifier: workspace:*
         version: link:../../core/theme
     devDependencies:
-      '@types/object-hash':
-        specifier: ^3.0.3
-        version: 3.0.3
       '@vitejs/plugin-react-swc':
         specifier: ^3.3.2
         version: 3.3.2(vite@4.4.9)
@@ -210,9 +207,6 @@ importers:
       '@stn-ui/icons':
         specifier: workspace:*
         version: link:../icons
-      '@types/object-hash':
-        specifier: ^3.0.3
-        version: 3.0.3
       '@vitejs/plugin-react-swc':
         specifier: ^3.3.2
         version: 3.3.2(vite@4.4.9)
@@ -259,9 +253,6 @@ importers:
         specifier: workspace:*
         version: link:../../core/theme
     devDependencies:
-      '@types/object-hash':
-        specifier: ^3.0.3
-        version: 3.0.3
       '@vitejs/plugin-react-swc':
         specifier: ^3.3.2
         version: 3.3.2(vite@4.4.9)
