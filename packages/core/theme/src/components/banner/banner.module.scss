@@ -1,0 +1,58 @@
+@import 'helpers';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-grayscale100);
+  padding: 80px;
+  border-radius: 20px;
+  color: var(--color-grayscale900)
+}
+
+.iconWrapper {
+  @include size(112px);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.iconBackground {
+  @include size(100%);
+
+  position: absolute;
+  color: var(--color-success400);
+
+  svg {
+    @include size(100%);
+  }
+}
+
+.icon {
+  @include size(100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-grayscale950);
+  z-index: 2;
+  font-size: 48px;
+
+  svg {
+    @include size(48px);
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--color-grayscale800);
+  margin-bottom: 32px;
+}

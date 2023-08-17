@@ -1,0 +1,26 @@
+@import 'helpers';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 80px 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.subtitle {
+  color: var(--color-grayscale700);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+  border-top: 1px solid var(--color-grayscale200);
+}
