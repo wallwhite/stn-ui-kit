@@ -1,0 +1,63 @@
+@import 'helpers';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid var(--color-grayscale200);
+  color: var(--color-grayscale900);
+}
+
+.trigger {
+  background: var(--color-contrast-white);
+  display: inline-flex;
+  font-size: 1.125rem;
+  align-items: center;
+  justify-content: start;
+  gap: 32px;
+  padding: 24px 0;
+  text-align: left;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  transition: all .2s ease-in-out;
+  z-index: 2;
+
+  &:hover,
+  &.active {
+    color: var(--color-primary500);
+  }
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    @include size(24px);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--color-contrast-white);
+  color: var(--color-grayscale800);
+  gap: 16px;
+  padding: 0 0 24px 56px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: -.03em;
+  z-index: 1;
+}
