@@ -1,5 +1,12 @@
 # @stn-ui/theme
 
+## 2.0.10
+
+### Patch Changes
+
+- 55a5178: Fixed border on accordion
+- 0ab33ce: layout fixes
+
 ## 2.0.9
 
 ### Patch Changes
