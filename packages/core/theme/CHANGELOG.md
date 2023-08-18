@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.12
+
+### Patch Changes
+
+- a261a77: fix/update-indents-generation
+
 ## 2.0.11
 
 ### Patch Changes
