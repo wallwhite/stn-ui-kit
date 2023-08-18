@@ -50,12 +50,19 @@
 }
 
 .image {
+  position: relative;
   width: 100%;
+  height: 420px;
   display: flex;
   overflow: hidden;
   border-radius: 32px;
 
+  @include rMobile {
+    height: 240px;
+  }
+
   img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
