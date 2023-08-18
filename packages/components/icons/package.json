@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/icons",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

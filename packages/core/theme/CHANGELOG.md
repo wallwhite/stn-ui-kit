@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.9
+
+### Patch Changes
+
+- 969ec9d: updated image in features
+
 ## 2.0.8
 
 ### Patch Changes
