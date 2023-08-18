@@ -1,5 +1,11 @@
 # @stn-ui/blog
 
+## 2.0.8
+
+### Patch Changes
+
+- a2ae660: fix blog link
+
 ## 2.0.7
 
 ### Patch Changes
