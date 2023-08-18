@@ -1,5 +1,13 @@
 # @stn-ui/loadable
 
+## 2.0.9
+
+### Patch Changes
+
+- Updated dependencies [1c1a603]
+  - @stn-ui/theme@2.0.11
+  - @stn-ui/loader@2.0.9
+
 ## 2.0.8
 
 ### Patch Changes

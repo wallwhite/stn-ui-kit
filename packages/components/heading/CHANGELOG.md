@@ -1,5 +1,12 @@
 # @stn-ui/heading
 
+## 2.0.6
+
+### Patch Changes
+
+- Updated dependencies [1c1a603]
+  - @stn-ui/theme@2.0.11
+
 ## 2.0.5
 
 ### Patch Changes
