@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.11
+
+### Patch Changes
+
+- 1c1a603: update container width
+
 ## 2.0.10
 
 ### Patch Changes

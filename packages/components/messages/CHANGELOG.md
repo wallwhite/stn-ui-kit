@@ -1,5 +1,14 @@
 # @stn-ui/messages
 
+## 2.0.6
+
+### Patch Changes
+
+- Updated dependencies [1c1a603]
+  - @stn-ui/theme@2.0.11
+  - @stn-ui/avatar@2.0.10
+  - @stn-ui/icons@2.0.9
+
 ## 2.0.5
 
 ### Patch Changes

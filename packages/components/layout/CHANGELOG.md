@@ -1,5 +1,14 @@
 # @stn-ui/layout
 
+## 2.0.10
+
+### Patch Changes
+
+- Updated dependencies [1c1a603]
+  - @stn-ui/theme@2.0.11
+  - @stn-ui/heading@2.0.6
+  - @stn-ui/text@2.0.7
+
 ## 2.0.9
 
 ### Patch Changes
