@@ -1,6 +1,7 @@
 @use "sass:map";
 @import 'helpers';
 
+$indentsKeys: '8', '16', '24', '32', '40', '48', '56', '64';
 $defaultIndents: (
   8: 8px,
   16: 16px,
@@ -107,7 +108,7 @@ body {
   margin: -1px;
 }
 
-@each $indent in $defaultIndents {
+@each $indent in $indentsKeys {
   .mb-#{$indent} {
     margin-bottom: map.get($defaultIndents, $indent);
   }
