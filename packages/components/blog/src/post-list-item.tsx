@@ -6,7 +6,6 @@ import { Link } from '@stn-ui/link';
 import { postCX } from '@stn-ui/theme';
 
 interface PostListItemProps {
-  id: string;
   title: string;
   date: string;
   author: string;
@@ -15,11 +14,10 @@ interface PostListItemProps {
   image: ReactNode;
   linkAs?: ElementType<any>;
   className?: string;
-  route: (id: string) => string;
+  route: string;
 }
 
 export const PostListItem: FC<PostListItemProps> = ({
-  id,
   title,
   date,
   author,
@@ -33,7 +31,7 @@ export const PostListItem: FC<PostListItemProps> = ({
   const LinkElement = linkAs || Link;
 
   return (
-    <LinkElement href={route(id)} className={postCX.post(className)}>
+    <LinkElement href={route} className={postCX.post(className)}>
       <span className={postCX.image()}>{image}</span>
       <span className={postCX.content()}>
         <span className={postCX.header()}>
