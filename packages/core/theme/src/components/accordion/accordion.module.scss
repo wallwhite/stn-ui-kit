@@ -15,6 +15,10 @@
   height: auto;
   border-top: 1px solid var(--color-grayscale200);
   color: var(--color-grayscale900);
+
+  &:first-child {
+    border-top: none;
+  }
 }
 
 .trigger {
