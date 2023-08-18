@@ -80,6 +80,15 @@ import {
   LoaderIcon,
   EyeCrossIcon,
   EyeIcon,
+  ChattingIcon,
+  AnnouncementIcon,
+  BookSearchIcon,
+  BooksIcon,
+  UniversityCapIcon,
+  QuizIcon,
+  DiamondIcon,
+  HomeIcon,
+  ShieldIcon,
 } from '../src';
 
 export default {
@@ -87,88 +96,145 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Default = () => (
-  <div className="grid grid-cols-5 gap-4">
-    <LoaderIcon />
-    <ArrowDownIcon />
-    <ArrowDownCircleIcon />
-    <ArrowNextIcon />
-    <ArrowPrevIcon />
-    <ArrowUpIcon />
-    <BarcodeIcon />
-    <BellIcon />
-    <BoxIcon />
-    <CalendarIcon />
-    <CalendarCheckIcon />
-    <CardIcon />
-    <ChatIcon />
-    <ChatAlternativeIcon />
-    <CheckIcon />
-    <CheckCircleIcon />
-    <CheckThinIcon />
-    <ClockIcon />
-    <CloseIcon />
-    <CloseFatIcon />
-    <CodePenIcon />
-    <ContainerIcon />
-    <CopyIcon />
-    <CreditCardIcon />
-    <DataflowIcon />
-    <DeleteChatIcon />
-    <DotsIcon />
-    <DownloadIcon />
-    <DownloadFillIcon />
-    <DuplicateIcon />
-    <EditIcon />
-    <EmailIcon />
-    <ExternalLinkIcon />
-    <InfoCircleIcon />
-    <InviteIcon />
-    <ImageIcon />
-    <ImageCheckIcon />
-    <ImageUpIcon />
-    <LinkIcon />
-    <LockIcon />
-    <LockAlternativeIcon />
-    <LogInIcon />
-    <LogoutIcon />
-    <MarkerIcon />
-    <MoonIcon />
-    <MusicNoteIcon />
-    <MusicNoteAlternativeIcon />
-    <NotificationIcon />
-    <PauseIcon />
-    <PauseCircleIcon />
-    <PlayIcon />
-    <PlayCircleIcon />
-    <PlusIcon />
-    <PlusCircleIcon />
-    <PlusCircleStrokeIcon />
-    <ProfileIcon />
-    <ProfileAlternativeIcon />
-    <RecordingIcon />
-    <ScaleIcon />
-    <SearchIcon />
-    <SearchAlternativeIcon />
-    <SettingsIcon />
-    <SettingsFillIcon />
-    <ShareIcon />
-    <ShareAlternativeIcon />
-    <StarIcon />
-    <StarFillIcon />
-    <StarRatingIcon />
-    <SunIcon />
-    <TimeIcon />
-    <ToggleOnIcon />
-    <ToggleOffIcon />
-    <TrashIcon />
-    <TrophyIcon />
-    <UploadIcon />
-    <UserCheckIcon />
-    <UsersPlusIcon />
-    <VolumeIcon />
-    <ZoomInIcon />
-    <EyeCrossIcon />
-    <EyeIcon />
+const IconWrapper = ({ children, name }: ObjectLiteral) => (
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100px',
+      border: '1px solid #ccc',
+      padding: '10px',
+    }}
+  >
+    <div style={{ padding: '25px 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{children}</div>
+    <div
+      style={{
+        marginTop: '10px',
+        fontSize: '10px',
+        textAlign: 'center',
+        wordBreak: 'break-word',
+        borderTop: '1px solid #ccc',
+        padding: '5px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+      }}
+    >
+      {name}
+    </div>
   </div>
 );
+
+export const Default = () => {
+  const icons = [
+    { name: 'LoaderIcon', icon: <LoaderIcon /> },
+    { name: 'ArrowDownIcon', icon: <ArrowDownIcon /> },
+    { name: 'ArrowDownCircleIcon', icon: <ArrowDownCircleIcon /> },
+    { name: 'ArrowNextIcon', icon: <ArrowNextIcon /> },
+    { name: 'ArrowPrevIcon', icon: <ArrowPrevIcon /> },
+    { name: 'ArrowUpIcon', icon: <ArrowUpIcon /> },
+    { name: 'BarcodeIcon', icon: <BarcodeIcon /> },
+    { name: 'BellIcon', icon: <BellIcon /> },
+    { name: 'BoxIcon', icon: <BoxIcon /> },
+    { name: 'CalendarIcon', icon: <CalendarIcon /> },
+    { name: 'CalendarCheckIcon', icon: <CalendarCheckIcon /> },
+    { name: 'CardIcon', icon: <CardIcon /> },
+    { name: 'ChatIcon', icon: <ChatIcon /> },
+    { name: 'ChatAlternativeIcon', icon: <ChatAlternativeIcon /> },
+    { name: 'CheckIcon', icon: <CheckIcon /> },
+    { name: 'CheckCircleIcon', icon: <CheckCircleIcon /> },
+    { name: 'CheckThinIcon', icon: <CheckThinIcon /> },
+    { name: 'ClockIcon', icon: <ClockIcon /> },
+    { name: 'CloseIcon', icon: <CloseIcon /> },
+    { name: 'CloseFatIcon', icon: <CloseFatIcon /> },
+    { name: 'CodePenIcon', icon: <CodePenIcon /> },
+    { name: 'ContainerIcon', icon: <ContainerIcon /> },
+    { name: 'CopyIcon', icon: <CopyIcon /> },
+    { name: 'CreditCardIcon', icon: <CreditCardIcon /> },
+    { name: 'DataflowIcon', icon: <DataflowIcon /> },
+    { name: 'DeleteChatIcon', icon: <DeleteChatIcon /> },
+    { name: 'DotsIcon', icon: <DotsIcon /> },
+    { name: 'DownloadIcon', icon: <DownloadIcon /> },
+    { name: 'DownloadFillIcon', icon: <DownloadFillIcon /> },
+    { name: 'DuplicateIcon', icon: <DuplicateIcon /> },
+    { name: 'EditIcon', icon: <EditIcon /> },
+    { name: 'EmailIcon', icon: <EmailIcon /> },
+    { name: 'ExternalLinkIcon', icon: <ExternalLinkIcon /> },
+    { name: 'InfoCircleIcon', icon: <InfoCircleIcon /> },
+    { name: 'InviteIcon', icon: <InviteIcon /> },
+    { name: 'ImageIcon', icon: <ImageIcon /> },
+    { name: 'ImageCheckIcon', icon: <ImageCheckIcon /> },
+    { name: 'ImageUpIcon', icon: <ImageUpIcon /> },
+    { name: 'LinkIcon', icon: <LinkIcon /> },
+    { name: 'LockIcon', icon: <LockIcon /> },
+    { name: 'LockAlternativeIcon', icon: <LockAlternativeIcon /> },
+    { name: 'LogInIcon', icon: <LogInIcon /> },
+    { name: 'LogoutIcon', icon: <LogoutIcon /> },
+    { name: 'MarkerIcon', icon: <MarkerIcon /> },
+    { name: 'MoonIcon', icon: <MoonIcon /> },
+    { name: 'MusicNoteIcon', icon: <MusicNoteIcon /> },
+    { name: 'MusicNoteAlternativeIcon', icon: <MusicNoteAlternativeIcon /> },
+    { name: 'NotificationIcon', icon: <NotificationIcon /> },
+    { name: 'PauseIcon', icon: <PauseIcon /> },
+    { name: 'PauseCircleIcon', icon: <PauseCircleIcon /> },
+    { name: 'PlayIcon', icon: <PlayIcon /> },
+    { name: 'PlayCircleIcon', icon: <PlayCircleIcon /> },
+    { name: 'PlusIcon', icon: <PlusIcon /> },
+    { name: 'PlusCircleIcon', icon: <PlusCircleIcon /> },
+    { name: 'PlusCircleStrokeIcon', icon: <PlusCircleStrokeIcon /> },
+    { name: 'ProfileIcon', icon: <ProfileIcon /> },
+    { name: 'ProfileAlternativeIcon', icon: <ProfileAlternativeIcon /> },
+    { name: 'RecordingIcon', icon: <RecordingIcon /> },
+    { name: 'ScaleIcon', icon: <ScaleIcon /> },
+    { name: 'SearchIcon', icon: <SearchIcon /> },
+    { name: 'SearchAlternativeIcon', icon: <SearchAlternativeIcon /> },
+    { name: 'SettingsIcon', icon: <SettingsIcon /> },
+    { name: 'SettingsFillIcon', icon: <SettingsFillIcon /> },
+    { name: 'ShareIcon', icon: <ShareIcon /> },
+    { name: 'ShareAlternativeIcon', icon: <ShareAlternativeIcon /> },
+    { name: 'StarIcon', icon: <StarIcon /> },
+    { name: 'StarFillIcon', icon: <StarFillIcon /> },
+    { name: 'StarRatingIcon', icon: <StarRatingIcon /> },
+    { name: 'SunIcon', icon: <SunIcon /> },
+    { name: 'TimeIcon', icon: <TimeIcon /> },
+    { name: 'ToggleOnIcon', icon: <ToggleOnIcon /> },
+    { name: 'ToggleOffIcon', icon: <ToggleOffIcon /> },
+    { name: 'TrashIcon', icon: <TrashIcon /> },
+    { name: 'TrophyIcon', icon: <TrophyIcon /> },
+    { name: 'UploadIcon', icon: <UploadIcon /> },
+    { name: 'UserCheckIcon', icon: <UserCheckIcon /> },
+    { name: 'UsersPlusIcon', icon: <UsersPlusIcon /> },
+    { name: 'VolumeIcon', icon: <VolumeIcon /> },
+    { name: 'ZoomInIcon', icon: <ZoomInIcon /> },
+    { name: 'EyeCrossIcon', icon: <EyeCrossIcon /> },
+    { name: 'ChattingIcon', icon: <ChattingIcon /> },
+    { name: 'AnnouncementIcon', icon: <AnnouncementIcon /> },
+    { name: 'BookSearchIcon', icon: <BookSearchIcon /> },
+    { name: 'BooksIcon', icon: <BooksIcon /> },
+    { name: 'UniversityCapIcon', icon: <UniversityCapIcon /> },
+    { name: 'QuizIcon', icon: <QuizIcon /> },
+    { name: 'DiamondIcon', icon: <DiamondIcon /> },
+    { name: 'HomeIcon', icon: <HomeIcon /> },
+    { name: 'ShieldIcon', icon: <ShieldIcon /> },
+    { name: 'EyeIcon', icon: <EyeIcon /> },
+  ];
+
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
+        gridGap: '10px',
+      }}
+    >
+      {icons.map((icon) => (
+        <IconWrapper name={icon.name} key={icon.name}>
+          {icon.icon}
+        </IconWrapper>
+      ))}
+    </div>
+  );
+};
