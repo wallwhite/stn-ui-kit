@@ -1,4 +1,16 @@
+@use "sass:map";
 @import 'helpers';
+
+$defaultIndents: (
+  8: 8px,
+  16: 16px,
+  24: 24px,
+  32: 32px,
+  40: 40px,
+  48: 48px,
+  56: 56px,
+  64: 64px,
+);
 
 * {
   box-sizing: border-box;
@@ -93,4 +105,31 @@ body {
   white-space: nowrap;
   width: 1px;
   margin: -1px;
+}
+
+@each $indent in $defaultIndents {
+  .mb-#{$indent} {
+    margin-bottom: map.get($defaultIndents, $indent);
+  }
+  .mt-#{$indent} {
+    margin-top: map.get($defaultIndents, $indent);
+  }
+  .ml-#{$indent} {
+    margin-left: map.get($defaultIndents, $indent);
+  }
+  .mr-#{$indent} {
+    margin-right: map.get($defaultIndents, $indent);
+  }
+  .pb-#{$indent} {
+    padding-bottom: map.get($defaultIndents, $indent);
+  }
+  .pt-#{$indent} {
+    padding-top: map.get($defaultIndents, $indent);
+  }
+  .pl-#{$indent} {
+    padding-left: map.get($defaultIndents, $indent);
+  }
+  .pr-#{$indent} {
+    padding-right: map.get($defaultIndents, $indent);
+  }
 }

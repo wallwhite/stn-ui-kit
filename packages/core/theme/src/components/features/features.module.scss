@@ -26,6 +26,7 @@
     font-size: 1.125rem;
     line-height: 2rem;
     letter-spacing: -.03em;
+    word-break: break-word;
   }
 }
 
@@ -43,7 +44,7 @@
 .right {
   display: flex;
   align-self: flex-end;
-  flex-grow: 1;
+  flex: 1;
   flex-direction: column;
   width: 100%;
   gap: 32px;
