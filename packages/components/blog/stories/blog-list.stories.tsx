@@ -1,7 +1,7 @@
 import { PostListItem, PostList } from '../src';
 
 export default {
-  title: 'Components/Blog',
+  title: 'Blog/PostList',
   component: PostList,
   tags: ['autodocs'],
 };
