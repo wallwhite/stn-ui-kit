@@ -29,9 +29,9 @@ export const AccordionItem: FC<AccordionItemProps> = forwardRef<HTMLDivElement, 
   const isActive = activeId === id;
 
   return (
-    <AnimatePresence mode="sync">
+    <AnimatePresence mode="sync" initial={false}>
       <div className={accordionItemCX.item(className)} {...restProps} ref={ref}>
-        <motion.button className={accordionItemCX.trigger({ isActive })} onClick={(): void => onToggle(id)}>
+        <button type="button" className={accordionItemCX.trigger({ isActive })} onClick={(): void => onToggle(id)}>
           <span className={accordionItemCX.icon()}>
             <MotionIcon
               key="indicator"
@@ -42,7 +42,7 @@ export const AccordionItem: FC<AccordionItemProps> = forwardRef<HTMLDivElement, 
             />
           </span>
           <span>{title}</span>
-        </motion.button>
+        </button>
         <AnimatePresence initial={false} mode="popLayout">
           {isActive && (
             <motion.div

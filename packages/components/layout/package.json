@@ -35,7 +35,9 @@
     "@stn-ui/theme": "workspace:*",
     "@stn-ui/heading": "workspace:*",
     "@stn-ui/text": "workspace:*",
-    "object-hash": "^3.0.0",
+    "@stn-ui/avatar": "workspace:*",
+    "@stn-ui/link": "workspace:*",
+    "@stn-ui/icons": "workspace:*",
     "react-responsive": "^9.0.2"
   },
   "devDependencies": {

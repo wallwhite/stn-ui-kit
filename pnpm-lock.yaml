@@ -821,18 +821,24 @@ importers:
 
   packages/components/layout:
     dependencies:
+      '@stn-ui/avatar':
+        specifier: workspace:*
+        version: link:../avatar
       '@stn-ui/heading':
         specifier: workspace:*
         version: link:../heading
+      '@stn-ui/icons':
+        specifier: workspace:*
+        version: link:../icons
+      '@stn-ui/link':
+        specifier: workspace:*
+        version: link:../link
       '@stn-ui/text':
         specifier: workspace:*
         version: link:../text
       '@stn-ui/theme':
         specifier: workspace:*
         version: link:../../core/theme
-      object-hash:
-        specifier: ^3.0.0
-        version: 3.0.0
       react-responsive:
         specifier: ^9.0.2
         version: 9.0.2(react@18.2.0)

@@ -3,7 +3,9 @@ import { Heading } from '@stn-ui/heading';
 import { Text } from '@stn-ui/text';
 import { chatListLayoutCX } from '@stn-ui/theme';
 
-export const ChatListLayout: FC<PropsWithChildren<{}>> = ({ children }) => (
+export interface ChatListLayoutProps extends PropsWithChildren<{}> {}
+
+export const ChatListLayout: FC<ChatListLayoutProps> = ({ children }) => (
   <div className={chatListLayoutCX.wrapper()}>
     <div className={chatListLayoutCX.header()}>
       <Heading variant="h2" className={chatListLayoutCX.title()}>

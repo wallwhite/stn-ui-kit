@@ -3,3 +3,4 @@ export * from './auth-layout';
 export * from './chat-layout';
 export * from './chat-list-layout';
 export * from './static-layout';
+export * from './article-layout';

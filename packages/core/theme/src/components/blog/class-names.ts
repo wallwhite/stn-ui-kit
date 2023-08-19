@@ -23,5 +23,7 @@ export const postCX = {
 };
 
 export const postArticleCX = {
-  wrapper: (className?: string): string => cx(styles.wrapper, className),
+  wrapper: (className?: string): string => cx(styles.articleWrapper, className),
+  content: (className?: string): string => cx(styles.articleContent, className),
+  image: (className?: string): string => cx(styles.articleImage, className),
 };
