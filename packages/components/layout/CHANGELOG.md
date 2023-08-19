@@ -1,5 +1,18 @@
 # @stn-ui/layout
 
+## 2.0.12
+
+### Patch Changes
+
+- 73433c3: add article layout
+- Updated dependencies [73433c3]
+  - @stn-ui/theme@2.0.13
+  - @stn-ui/avatar@2.0.12
+  - @stn-ui/heading@2.0.8
+  - @stn-ui/icons@2.0.11
+  - @stn-ui/link@2.0.13
+  - @stn-ui/text@2.0.9
+
 ## 2.0.11
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @stn-ui/switcher
 
+## 2.0.8
+
+### Patch Changes
+
+- Updated dependencies [73433c3]
+  - @stn-ui/theme@2.0.13
+  - @stn-ui/link@2.0.13
+
 ## 2.0.7
 
 ### Patch Changes

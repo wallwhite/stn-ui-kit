@@ -1,5 +1,16 @@
 # @stn-ui/chats-navigation
 
+## 2.0.8
+
+### Patch Changes
+
+- Updated dependencies [73433c3]
+  - @stn-ui/theme@2.0.13
+  - @stn-ui/button@2.0.18
+  - @stn-ui/heading@2.0.8
+  - @stn-ui/icons@2.0.11
+  - @stn-ui/link@2.0.13
+
 ## 2.0.7
 
 ### Patch Changes
