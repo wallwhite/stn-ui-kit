@@ -1,5 +1,14 @@
 # @stn-ui/accordion
 
+## 2.0.8
+
+### Patch Changes
+
+- 73433c3: add article layout
+- Updated dependencies [73433c3]
+  - @stn-ui/theme@2.0.13
+  - @stn-ui/icons@2.0.11
+
 ## 2.0.7
 
 ### Patch Changes

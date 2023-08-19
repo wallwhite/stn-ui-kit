@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.13
+
+### Patch Changes
+
+- 73433c3: add article layout
+
 ## 2.0.12
 
 ### Patch Changes

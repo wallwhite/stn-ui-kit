@@ -1,5 +1,20 @@
 # @stn-ui/forms
 
+## 2.0.8
+
+### Patch Changes
+
+- Updated dependencies [73433c3]
+  - @stn-ui/theme@2.0.13
+  - @stn-ui/button@2.0.18
+  - @stn-ui/color-avatar@2.0.8
+  - @stn-ui/form@2.0.8
+  - @stn-ui/icons@2.0.11
+  - @stn-ui/inputs@2.0.8
+  - @stn-ui/logo@2.0.8
+  - @stn-ui/modal@2.0.9
+  - @stn-ui/text@2.0.9
+
 ## 2.0.7
 
 ### Patch Changes
