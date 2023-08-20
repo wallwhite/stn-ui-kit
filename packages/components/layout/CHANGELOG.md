@@ -1,5 +1,18 @@
 # @stn-ui/layout
 
+## 2.0.13
+
+### Patch Changes
+
+- 3976a56: fix components
+- Updated dependencies [3976a56]
+  - @stn-ui/text@2.0.10
+  - @stn-ui/theme@2.0.14
+  - @stn-ui/avatar@2.0.13
+  - @stn-ui/heading@2.0.9
+  - @stn-ui/icons@2.0.12
+  - @stn-ui/link@2.0.14
+
 ## 2.0.12
 
 ### Patch Changes
