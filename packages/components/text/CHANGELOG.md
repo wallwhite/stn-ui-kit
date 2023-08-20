@@ -1,5 +1,13 @@
 # @stn-ui/text
 
+## 2.0.10
+
+### Patch Changes
+
+- 3976a56: fix components
+- Updated dependencies [3976a56]
+  - @stn-ui/theme@2.0.14
+
 ## 2.0.9
 
 ### Patch Changes

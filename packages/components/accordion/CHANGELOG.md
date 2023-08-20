@@ -1,5 +1,14 @@
 # @stn-ui/accordion
 
+## 2.0.9
+
+### Patch Changes
+
+- 3976a56: fix components
+- Updated dependencies [3976a56]
+  - @stn-ui/theme@2.0.14
+  - @stn-ui/icons@2.0.12
+
 ## 2.0.8
 
 ### Patch Changes

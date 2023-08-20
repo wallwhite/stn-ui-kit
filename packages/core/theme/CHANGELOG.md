@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.14
+
+### Patch Changes
+
+- 3976a56: fix components
+
 ## 2.0.13
 
 ### Patch Changes
