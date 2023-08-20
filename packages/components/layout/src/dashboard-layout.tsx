@@ -4,10 +4,11 @@ import { useSidebarContext } from '@stn-ui/provider';
 import { dashboardLayoutCX } from '@stn-ui/theme';
 
 export interface DashboardLayoutProps {
+  isFixedHeight?: boolean;
   sidebar?: ReactNode;
 }
 
-export const DashboardLayout: FC<PropsWithChildren<DashboardLayoutProps>> = ({ sidebar, children }) => {
+export const DashboardLayout: FC<PropsWithChildren<DashboardLayoutProps>> = ({ sidebar, isFixedHeight, children }) => {
   const { isExpanded, expandSidebar, collapseSidebar } = useSidebarContext();
 
   const isDesktop = useMediaQuery({
@@ -28,7 +29,7 @@ export const DashboardLayout: FC<PropsWithChildren<DashboardLayoutProps>> = ({ s
   return (
     <div className={layoutClassNames}>
       {sidebar}
-      <div className={dashboardLayoutCX.contentWrapper()}>
+      <div className={dashboardLayoutCX.contentWrapper({ isFixedHeight: !!isFixedHeight })}>
         <div className={dashboardLayoutCX.content()}>{children}</div>
       </div>
     </div>

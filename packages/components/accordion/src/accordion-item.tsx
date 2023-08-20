@@ -29,38 +29,36 @@ export const AccordionItem: FC<AccordionItemProps> = forwardRef<HTMLDivElement, 
   const isActive = activeId === id;
 
   return (
-    <AnimatePresence mode="sync" initial={false}>
-      <div className={accordionItemCX.item(className)} {...restProps} ref={ref}>
-        <button type="button" className={accordionItemCX.trigger({ isActive })} onClick={(): void => onToggle(id)}>
-          <span className={accordionItemCX.icon()}>
-            <MotionIcon
-              key="indicator"
-              initial="collapsed"
-              animate={isActive ? 'open' : 'collapsed'}
-              exit="collapsed"
-              variants={ANIMATION_INDICATOR_VARIANTS}
-            />
-          </span>
-          <span>{title}</span>
-        </button>
-        <AnimatePresence initial={false} mode="popLayout">
-          {isActive && (
-            <motion.div
-              layout
-              className={accordionItemCX.content()}
-              key="content"
-              initial="collapsed"
-              animate="open"
-              exit="collapsed"
-              variants={ANIMATION_CONTENT_VARIANTS}
-              transition={ANIMATION_TRANSITION}
-            >
-              {children}
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </AnimatePresence>
+    <div className={accordionItemCX.item(className)} {...restProps} ref={ref}>
+      <button type="button" className={accordionItemCX.trigger({ isActive })} onClick={(): void => onToggle(id)}>
+        <span className={accordionItemCX.icon()}>
+          <MotionIcon
+            key="indicator"
+            initial="collapsed"
+            animate={isActive ? 'open' : 'collapsed'}
+            exit="collapsed"
+            variants={ANIMATION_INDICATOR_VARIANTS}
+          />
+        </span>
+        <span>{title}</span>
+      </button>
+      <AnimatePresence initial={false} mode="popLayout">
+        {isActive && (
+          <motion.div
+            layout
+            className={accordionItemCX.content()}
+            key="content"
+            initial="collapsed"
+            animate="open"
+            exit="collapsed"
+            variants={ANIMATION_CONTENT_VARIANTS}
+            transition={ANIMATION_TRANSITION}
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 });
 
