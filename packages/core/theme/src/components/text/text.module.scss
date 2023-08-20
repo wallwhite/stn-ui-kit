@@ -5,7 +5,8 @@
   font-size: rem(16px);
   font-style: normal;
   word-wrap: break-word;
-  word-break: break-all;
+  word-break: break-word;
+  line-height: 120%;
 
   &.wide {
     display: inline-flex;
@@ -20,22 +21,18 @@
   &.size {
     &-xs {
       font-size: rem(12px);
-      line-height: rem(16px);
     }
 
     &-s {
       font-size: rem(14px);
-      line-height: rem(16px);
     }
 
     &-m {
       font-size: rem(16px);
-      line-height: rem(20px);
     }
 
     &-l {
       font-size: rem(18px);
-      line-height: rem(24px);
     }
   }
 
@@ -53,17 +50,14 @@
   &.size {
     &-s {
       font-size: rem(14px);
-      line-height: rem(20px);
     }
 
     &-m {
       font-size: rem(16px);
-      line-height: rem(20px);
     }
 
     &-l {
       font-size: rem(24px);
-      line-height: rem(18px);
     }
   }
 

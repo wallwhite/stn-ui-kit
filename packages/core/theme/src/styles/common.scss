@@ -42,6 +42,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
   line-height: 1.3;
+  background: var(--color-contrast-black);
   color: var(--color-contrast-black);
 
   &.no-scroll {

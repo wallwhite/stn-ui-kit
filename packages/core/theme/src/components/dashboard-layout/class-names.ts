@@ -10,6 +10,9 @@ export const dashboardLayoutCX = {
     cx(styles.wrapper, classNames, {
       [styles.expanded]: isExpanded,
     }),
-  contentWrapper: (): string => cx(styles.contentWrapper),
+  contentWrapper: ({ isFixedHeight }: { isFixedHeight: boolean }): string =>
+    cx(styles.contentWrapper, {
+      [styles.fixedHeight]: isFixedHeight,
+    }),
   content: (): string => cx(styles.content),
 };
