@@ -1,4 +1,5 @@
-import { FC, ReactNode } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ElementType, FC, ReactNode } from 'react';
 import { Avatar } from '@stn-ui/avatar';
 import { hexToRgba } from '@stn-ui/common-utils';
 import { EmailIcon } from '@stn-ui/icons';
@@ -6,7 +7,6 @@ import { Td, Tr } from '@stn-ui/table';
 import { chatRowCX } from '@stn-ui/theme';
 
 export interface ChatRowProps {
-  id: string;
   title: string;
   lastMessage: string;
   icon: ReactNode;
@@ -14,14 +14,15 @@ export interface ChatRowProps {
   tag: string;
   counter: number;
   createdAt: string;
-  route: (id: string) => string;
+  href: string;
+  linkAs?: ElementType<any>;
 }
 
-export const ChatRow: FC<ChatRowProps> = ({ id, title, lastMessage, icon, color, tag, counter, route }) => {
+export const ChatRow: FC<ChatRowProps> = ({ title, lastMessage, icon, color, tag, counter, href, linkAs }) => {
   const isCounterExists = typeof counter === 'number' && counter >= 0;
 
   return (
-    <Tr as="link" href={route(id)} className={chatRowCX.row()}>
+    <Tr as="link" href={href} customElement={linkAs} className={chatRowCX.row()}>
       <Td>
         <span className={chatRowCX.chat()}>
           <Avatar type="square" customColor={hexToRgba(color, 0.2)} icon={icon} className={chatRowCX.icon()} />
