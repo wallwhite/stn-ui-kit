@@ -27,18 +27,19 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
+    "@stn-ui/table": "workspace:*",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
     "@stn-ui/avatar": "workspace:*",
-    "@stn-ui/table": "workspace:*",
     "@stn-ui/icons": "workspace:*",
     "@stn-ui/theme": "workspace:*",
     "@stn-ui/common-utils": "workspace:*",
     "object-hash": "^3.0.0"
   },
   "devDependencies": {
+    "@stn-ui/table": "workspace:*",
     "@types/object-hash": "^3.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "clean-package": "2.2.0",
