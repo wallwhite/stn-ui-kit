@@ -1,5 +1,11 @@
 # @stn-ui/button
 
+## 2.0.12
+
+### Patch Changes
+
+- ac5b488: changed api of chatrow
+
 ## 2.0.11
 
 ### Patch Changes
