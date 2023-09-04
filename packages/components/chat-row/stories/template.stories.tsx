@@ -8,11 +8,6 @@ export default {
   component: ChatRow,
   tags: ['autodocs'],
   argTypes: {
-    id: {
-      name: 'id',
-      defaultValue: '1',
-      type: { name: 'string', required: true },
-    },
     title: {
       name: 'title',
       defaultValue: 'title',
@@ -43,10 +38,13 @@ export default {
       defaultValue: 'tag',
       type: { name: 'string', required: true },
     },
-    route: {
-      name: 'route',
-      defaultValue: () => '/',
-      type: { name: 'function', required: true },
+    href: {
+      name: 'href',
+      type: { name: 'string', required: true },
+    },
+    linkAs: {
+      name: 'linkAs',
+      type: { name: 'ElementType', required: false },
     },
   },
   args: {
@@ -75,7 +73,6 @@ export const Default = (): ReactNode => (
     </THead>
     <TBody>
       <ChatRow
-        id="id"
         title="Some chat"
         lastMessage="I want you to know that I am happy to have you as my helper."
         icon="🦧"
@@ -83,10 +80,9 @@ export const Default = (): ReactNode => (
         tag="tag"
         counter={154}
         createdAt={Date.now().toString()}
-        route={() => '/'}
+        href="/1"
       />
       <ChatRow
-        id="id"
         title="Some chat"
         lastMessage="I want you to know that I am happy to have you as my helper."
         icon="🦧"
@@ -94,7 +90,7 @@ export const Default = (): ReactNode => (
         tag="tag"
         counter={154}
         createdAt={Date.now().toString()}
-        route={() => '/'}
+        href="/2"
       />
     </TBody>
   </Table>
