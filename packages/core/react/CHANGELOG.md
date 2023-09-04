@@ -1,5 +1,13 @@
 # @stn-ui/react
 
+## 2.0.18
+
+### Patch Changes
+
+- Updated dependencies [9ca7c67]
+- Updated dependencies [0f3f972]
+  - @stn-ui/chat-row@2.0.13
+
 ## 2.0.17
 
 ### Patch Changes

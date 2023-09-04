@@ -1,5 +1,12 @@
 # @stn-ui/button
 
+## 2.0.13
+
+### Patch Changes
+
+- 9ca7c67: changes to trigger release
+- 0f3f972: Use external table for chat-row
+
 ## 2.0.12
 
 ### Patch Changes
