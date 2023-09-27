@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.16
+
+### Patch Changes
+
+- 6298ca0: add fixex to form and accordion
+
 ## 2.0.15
 
 ### Patch Changes

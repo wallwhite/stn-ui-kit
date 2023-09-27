@@ -1,5 +1,14 @@
 # @stn-ui/inputs
 
+## 2.0.11
+
+### Patch Changes
+
+- Updated dependencies [6298ca0]
+  - @stn-ui/theme@2.0.16
+  - @stn-ui/icons@2.0.14
+  - @stn-ui/text@2.0.12
+
 ## 2.0.10
 
 ### Patch Changes

@@ -1,5 +1,21 @@
 # @stn-ui/forms
 
+## 2.0.11
+
+### Patch Changes
+
+- 6298ca0: add fixex to form and accordion
+- Updated dependencies [6298ca0]
+  - @stn-ui/theme@2.0.16
+  - @stn-ui/button@2.0.21
+  - @stn-ui/color-avatar@2.0.11
+  - @stn-ui/form@2.0.11
+  - @stn-ui/icons@2.0.14
+  - @stn-ui/inputs@2.0.11
+  - @stn-ui/logo@2.0.11
+  - @stn-ui/modal@2.0.12
+  - @stn-ui/text@2.0.12
+
 ## 2.0.10
 
 ### Patch Changes

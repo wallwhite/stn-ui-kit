@@ -1,5 +1,12 @@
 # @stn-ui/avatar
 
+## 2.0.15
+
+### Patch Changes
+
+- Updated dependencies [6298ca0]
+  - @stn-ui/theme@2.0.16
+
 ## 2.0.14
 
 ### Patch Changes
