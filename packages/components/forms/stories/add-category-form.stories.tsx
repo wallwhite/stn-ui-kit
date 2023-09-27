@@ -14,7 +14,7 @@ export const Default = () => {
   }
 
   const AddChatModal = () => {
-    const handleSubmit = async (data) => {
+    const handleSubmit = async (data: ObjectLiteral) => {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       alert(JSON.stringify(data));
     };
