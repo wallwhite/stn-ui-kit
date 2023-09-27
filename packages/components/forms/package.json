@@ -27,22 +27,23 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
+    "@stn-ui/modal": "workspace:*",
     "react": ">=18",
     "react-dom": ">=18",
     "react-hook-form": "^7.45.4",
     "yup": "^1.2.0"
   },
   "dependencies": {
+    "@stn-ui/color-avatar": "workspace:*",
     "@stn-ui/inputs": "workspace:*",
     "@stn-ui/form": "workspace:*",
-    "@stn-ui/color-avatar": "workspace:*",
-    "@stn-ui/modal": "workspace:*",
     "@stn-ui/icons": "workspace:*",
     "@stn-ui/button": "workspace:*",
     "@stn-ui/text": "workspace:*",
     "@stn-ui/logo": "workspace:*",
     "@stn-ui/react-utils": "workspace:*",
-    "@stn-ui/theme": "workspace:*"
+    "@stn-ui/theme": "workspace:*",
+    "@stn-ui/use-toggle-boolean": "workspace:*"
   },
   "devDependencies": {
     "@types/object-hash": "^3.0.3",

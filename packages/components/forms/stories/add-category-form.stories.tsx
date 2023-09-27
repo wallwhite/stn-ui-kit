@@ -13,7 +13,13 @@ export const Default = () => {
     AddCategoryModal = 'AddCategoryModalForm',
   }
 
-  const AddChatModal = () => <AddCategoryModalForm onSubmit={(data) => alert(JSON.stringify(data))} />;
+  const AddChatModal = () => {
+    const handleSubmit = async (data) => {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      alert(JSON.stringify(data));
+    };
+    return <AddCategoryModalForm onSubmit={handleSubmit} />;
+  };
 
   const modals = {
     [ModalNames.AddCategoryModal]: AddChatModal,

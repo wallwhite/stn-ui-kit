@@ -14,12 +14,18 @@ export const AddCategoryModalFormBody: FC = () => {
   return (
     <ModalBody>
       <FormRow isSplit>
-        <FormInput scale="l" name={AddCategoryFormFields.Name} label="Ca name" placeholder="Enter chat name" isWide />
+        <FormInput
+          scale="l"
+          name={AddCategoryFormFields.Name}
+          label="Category name"
+          placeholder="Enter category name"
+          isWide
+        />
         <FormSelect
           scale="l"
           name={AddCategoryFormFields.Color}
-          label="Chat category"
-          placeholder="Select chat category"
+          label="Category color"
+          placeholder="Select category color"
           elementLeft={<ColorAvatar color={selectedColor?.value} />}
           isWide
         >

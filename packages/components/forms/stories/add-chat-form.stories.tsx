@@ -20,9 +20,14 @@ export const Default = () => {
     { id: 4, value: 'frontend', title: 'Frontend with AI', color: '#7ECE18' },
   ];
 
-  const AddChatModal = () => (
-    <AddChatModalForm categories={CHAT_CATEGORIES} onSubmit={(data) => alert(JSON.stringify(data))} />
-  );
+  const AddChatModal = () => {
+    const handleSubmit = async (data) => {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      alert(JSON.stringify(data));
+    };
+
+    return <AddChatModalForm categories={CHAT_CATEGORIES} onSubmit={handleSubmit} />;
+  };
 
   const modals = {
     [ModalNames.AddChatModal]: AddChatModal,
