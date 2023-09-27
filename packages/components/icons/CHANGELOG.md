@@ -1,5 +1,12 @@
 # @stn-ui/icons
 
+## 2.0.13
+
+### Patch Changes
+
+- Updated dependencies [becf089]
+  - @stn-ui/theme@2.0.15
+
 ## 2.0.12
 
 ### Patch Changes

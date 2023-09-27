@@ -1,5 +1,33 @@
 # @stn-ui/react
 
+## 2.0.19
+
+### Patch Changes
+
+- @stn-ui/avatar@2.0.14
+- @stn-ui/button@2.0.20
+- @stn-ui/chat-row@2.0.14
+- @stn-ui/chats-navigation@2.0.10
+- @stn-ui/color-avatar@2.0.10
+- @stn-ui/form@2.0.10
+- @stn-ui/heading@2.0.10
+- @stn-ui/icons@2.0.13
+- @stn-ui/inputs@2.0.10
+- @stn-ui/layout@2.0.14
+- @stn-ui/link@2.0.15
+- @stn-ui/loadable@2.0.13
+- @stn-ui/loader@2.0.13
+- @stn-ui/logo@2.0.10
+- @stn-ui/messages@2.0.10
+- @stn-ui/modal@2.0.11
+- @stn-ui/navigation@2.0.11
+- @stn-ui/pagination@2.0.10
+- @stn-ui/sidebar@2.0.10
+- @stn-ui/switcher@2.0.10
+- @stn-ui/table@2.0.12
+- @stn-ui/text@2.0.11
+- @stn-ui/toasts@2.0.10
+
 ## 2.0.18
 
 ### Patch Changes

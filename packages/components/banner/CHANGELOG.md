@@ -1,5 +1,14 @@
 # @stn-ui/banner
 
+## 2.0.10
+
+### Patch Changes
+
+- Updated dependencies [becf089]
+  - @stn-ui/theme@2.0.15
+  - @stn-ui/heading@2.0.10
+  - @stn-ui/text@2.0.11
+
 ## 2.0.9
 
 ### Patch Changes

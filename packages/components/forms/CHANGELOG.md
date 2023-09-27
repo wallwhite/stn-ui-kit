@@ -1,5 +1,21 @@
 # @stn-ui/forms
 
+## 2.0.10
+
+### Patch Changes
+
+- becf089: updated library components
+- Updated dependencies [becf089]
+  - @stn-ui/theme@2.0.15
+  - @stn-ui/button@2.0.20
+  - @stn-ui/color-avatar@2.0.10
+  - @stn-ui/form@2.0.10
+  - @stn-ui/icons@2.0.13
+  - @stn-ui/inputs@2.0.10
+  - @stn-ui/logo@2.0.10
+  - @stn-ui/modal@2.0.11
+  - @stn-ui/text@2.0.11
+
 ## 2.0.9
 
 ### Patch Changes
