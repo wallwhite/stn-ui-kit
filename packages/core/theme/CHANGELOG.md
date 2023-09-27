@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.15
+
+### Patch Changes
+
+- becf089: updated library components
+
 ## 2.0.14
 
 ### Patch Changes

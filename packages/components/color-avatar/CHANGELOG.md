@@ -1,5 +1,13 @@
 # @stn-ui/color-avatar
 
+## 2.0.10
+
+### Patch Changes
+
+- Updated dependencies [becf089]
+  - @stn-ui/theme@2.0.15
+  - @stn-ui/avatar@2.0.14
+
 ## 2.0.9
 
 ### Patch Changes

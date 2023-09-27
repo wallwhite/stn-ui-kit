@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/table",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
