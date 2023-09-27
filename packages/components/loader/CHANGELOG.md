@@ -1,5 +1,13 @@
 # @stn-ui/loader
 
+## 2.0.14
+
+### Patch Changes
+
+- Updated dependencies [6298ca0]
+  - @stn-ui/theme@2.0.16
+  - @stn-ui/icons@2.0.14
+
 ## 2.0.13
 
 ### Patch Changes

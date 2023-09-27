@@ -1,5 +1,13 @@
 # @stn-ui/navigation
 
+## 2.0.12
+
+### Patch Changes
+
+- Updated dependencies [6298ca0]
+  - @stn-ui/theme@2.0.16
+  - @stn-ui/link@2.0.16
+
 ## 2.0.11
 
 ### Patch Changes

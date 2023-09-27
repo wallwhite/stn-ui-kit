@@ -1,5 +1,14 @@
 # @stn-ui/toasts
 
+## 2.0.11
+
+### Patch Changes
+
+- Updated dependencies [6298ca0]
+  - @stn-ui/theme@2.0.16
+  - @stn-ui/button@2.0.21
+  - @stn-ui/icons@2.0.14
+
 ## 2.0.10
 
 ### Patch Changes
