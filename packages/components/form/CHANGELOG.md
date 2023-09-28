@@ -1,5 +1,12 @@
 # @stn-ui/form
 
+## 2.0.14
+
+### Patch Changes
+
+- Updated dependencies [c6017ab]
+  - @stn-ui/inputs@2.0.13
+
 ## 2.0.13
 
 ### Patch Changes

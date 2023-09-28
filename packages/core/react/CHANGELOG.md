@@ -1,5 +1,13 @@
 # @stn-ui/react
 
+## 2.0.23
+
+### Patch Changes
+
+- Updated dependencies [c6017ab]
+  - @stn-ui/inputs@2.0.13
+  - @stn-ui/form@2.0.14
+
 ## 2.0.22
 
 ### Patch Changes

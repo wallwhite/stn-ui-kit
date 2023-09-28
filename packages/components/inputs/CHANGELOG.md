@@ -1,5 +1,11 @@
 # @stn-ui/inputs
 
+## 2.0.13
+
+### Patch Changes
+
+- c6017ab: update textarea
+
 ## 2.0.12
 
 ### Patch Changes
