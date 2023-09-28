@@ -27,6 +27,8 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
+    "@stn-ui/theme": "workspace:*",
+    "@stn-ui/inputs": "workspace:*",
     "@hookform/resolvers": "^3.2.0",
     "react": ">=18",
     "react-dom": ">=18",
@@ -36,11 +38,11 @@
   "dependencies": {
     "@stn-ui/use-toggle-boolean": "workspace:*",
     "@stn-ui/react-utils": "workspace:*",
-    "@stn-ui/theme": "workspace:*",
-    "@stn-ui/inputs": "workspace:*",
     "@stn-ui/icons": "workspace:*"
   },
   "devDependencies": {
+    "@stn-ui/theme": "workspace:*",
+    "@stn-ui/inputs": "workspace:*",
     "@stn-ui/button": "workspace:*",
     "@hookform/resolvers": "^3.2.0",
     "@types/object-hash": "^3.0.3",
