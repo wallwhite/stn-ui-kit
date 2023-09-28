@@ -1,5 +1,12 @@
 # @stn-ui/react
 
+## 2.0.22
+
+### Patch Changes
+
+- Updated dependencies [99f1310]
+  - @stn-ui/form@2.0.13
+
 ## 2.0.21
 
 ### Patch Changes

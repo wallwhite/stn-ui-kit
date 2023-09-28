@@ -1,5 +1,11 @@
 # @stn-ui/form
 
+## 2.0.13
+
+### Patch Changes
+
+- 99f1310: update form
+
 ## 2.0.12
 
 ### Patch Changes
