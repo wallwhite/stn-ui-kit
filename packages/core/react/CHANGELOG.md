@@ -1,5 +1,37 @@
 # @stn-ui/react
 
+## 2.0.21
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [a300724]
+- Updated dependencies [48cb730]
+  - @stn-ui/modal@2.0.13
+  - @stn-ui/form@2.0.12
+  - @stn-ui/avatar@2.0.16
+  - @stn-ui/button@2.0.22
+  - @stn-ui/chat-row@2.0.16
+  - @stn-ui/chats-navigation@2.0.12
+  - @stn-ui/color-avatar@2.0.12
+  - @stn-ui/heading@2.0.12
+  - @stn-ui/icons@2.0.15
+  - @stn-ui/inputs@2.0.12
+  - @stn-ui/layout@2.0.16
+  - @stn-ui/link@2.0.17
+  - @stn-ui/loadable@2.0.15
+  - @stn-ui/loader@2.0.15
+  - @stn-ui/logo@2.0.12
+  - @stn-ui/messages@2.0.12
+  - @stn-ui/navigation@2.0.13
+  - @stn-ui/pagination@2.0.12
+  - @stn-ui/provider@2.0.6
+  - @stn-ui/sidebar@2.0.12
+  - @stn-ui/switcher@2.0.12
+  - @stn-ui/table@2.0.14
+  - @stn-ui/text@2.0.13
+  - @stn-ui/toasts@2.0.12
+
 ## 2.0.20
 
 ### Patch Changes

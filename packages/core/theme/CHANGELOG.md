@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.17
+
+### Patch Changes
+
+- 48cb730: trigger release
+
 ## 2.0.16
 
 ### Patch Changes

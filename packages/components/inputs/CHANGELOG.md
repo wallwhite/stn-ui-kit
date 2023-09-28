@@ -1,5 +1,16 @@
 # @stn-ui/inputs
 
+## 2.0.12
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/icons@2.0.15
+  - @stn-ui/text@2.0.13
+  - @stn-ui/theme@2.0.17
+  - @stn-ui/use-toggle-boolean@2.0.5
+
 ## 2.0.11
 
 ### Patch Changes

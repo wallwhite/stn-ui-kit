@@ -1,5 +1,14 @@
 # @stn-ui/logo
 
+## 2.0.12
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/link@2.0.17
+  - @stn-ui/theme@2.0.17
+
 ## 2.0.11
 
 ### Patch Changes

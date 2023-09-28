@@ -1,5 +1,11 @@
 # @stn-ui/use-toggle-boolean
 
+## 2.0.5
+
+### Patch Changes
+
+- 48cb730: trigger release
+
 ## 2.0.4
 
 ### Patch Changes
