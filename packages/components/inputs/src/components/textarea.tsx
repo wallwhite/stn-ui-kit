@@ -1,5 +1,7 @@
-import { ReactNode, TextareaHTMLAttributes, forwardRef } from 'react';
-import TextareaAutoSize from 'react-textarea-autosize';
+import { ReactNode, TextareaHTMLAttributes, forwardRef, useEffect, useRef } from 'react';
+// @ts-ignore
+import { TextareaAutoSize } from 'textarea-autosize';
+import { mergeRefs } from '@stn-ui/react-utils';
 import { textareaCX } from '@stn-ui/theme';
 import { InputHint } from './input-hint';
 import { Label } from './label';
@@ -31,6 +33,9 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>((props, r
     isWide,
     ...restProps
   } = props;
+
+  const textAreaRef = useRef<HTMLTextAreaElement>(null);
+
   const hint = success || warning || error;
   const isHintVisible = hint && (typeof hint === 'string' || typeof hint === 'object');
 
@@ -44,18 +49,31 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>((props, r
     isWarning,
   });
 
+  useEffect(() => {
+    const autosize = new TextareaAutoSize(textAreaRef.current);
+
+    return (): void => {
+      try {
+        autosize.destroy();
+      } catch {
+        // do nothing
+      }
+    };
+  }, []);
+
   return (
     <Label label={label} isWide={isWide} className={textareaCX.wrapper()} labelClassName={textareaCX.label()}>
       <span className={classNames}>
         {elementLeft && <span className={textareaCX.addonElement()}>{elementLeft}</span>}
         <span className={textareaCX.textareaWrapper()}>
-          <TextareaAutoSize
-            {...restProps}
+          <textarea
             className={textareaCX.textareaElement()}
             id={`${label || 'default'}`}
-            maxRows={maxRows}
+            rows={1}
+            ref={mergeRefs(textAreaRef, ref)}
             disabled={isDisabled}
-            ref={ref}
+            style={{ maxHeight: `${maxRows * 18}px` }}
+            {...restProps}
           />
         </span>
         {elementRight && <span className={textareaCX.addonElement()}>{elementRight}</span>}

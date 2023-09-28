@@ -27,6 +27,7 @@
     "version:major": "pnpm version major --no-git-tag-version"
   },
   "peerDependencies": {
+    "@stn-ui/theme": "workspace:*",
     "react": ">=18",
     "react-dom": ">=18",
     "react-hook-form": "^7.45.4"
@@ -35,10 +36,10 @@
     "@headlessui/react": "^1.7.16",
     "@stn-ui/icons": "workspace:*",
     "@stn-ui/text": "workspace:*",
-    "@stn-ui/theme": "workspace:*",
+    "@stn-ui/react-utils": "workspace:*",
     "@stn-ui/use-toggle-boolean": "workspace:*",
     "lodash.isequal": "^4.5.0",
-    "react-textarea-autosize": "^8.5.2"
+    "textarea-autosize": "^1.0.0"
   },
   "devDependencies": {
     "@types/lodash.isequal": "^4.5.6",
