@@ -547,15 +547,9 @@ importers:
       '@stn-ui/icons':
         specifier: workspace:*
         version: link:../icons
-      '@stn-ui/inputs':
-        specifier: workspace:*
-        version: link:../inputs
       '@stn-ui/react-utils':
         specifier: workspace:*
         version: link:../../utils/react-utils
-      '@stn-ui/theme':
-        specifier: workspace:*
-        version: link:../../core/theme
       '@stn-ui/use-toggle-boolean':
         specifier: workspace:*
         version: link:../../hooks/use-toggle-boolean
@@ -566,6 +560,12 @@ importers:
       '@stn-ui/button':
         specifier: workspace:*
         version: link:../button
+      '@stn-ui/inputs':
+        specifier: workspace:*
+        version: link:../inputs
+      '@stn-ui/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
       '@types/object-hash':
         specifier: ^3.0.3
         version: 3.0.3
@@ -614,34 +614,37 @@ importers:
       '@stn-ui/color-avatar':
         specifier: workspace:*
         version: link:../color-avatar
-      '@stn-ui/form':
-        specifier: workspace:*
-        version: link:../form
       '@stn-ui/icons':
         specifier: workspace:*
         version: link:../icons
-      '@stn-ui/inputs':
-        specifier: workspace:*
-        version: link:../inputs
       '@stn-ui/logo':
         specifier: workspace:*
         version: link:../logo
-      '@stn-ui/modal':
-        specifier: workspace:*
-        version: link:../modal
       '@stn-ui/react-utils':
         specifier: workspace:*
         version: link:../../utils/react-utils
       '@stn-ui/text':
         specifier: workspace:*
         version: link:../text
-      '@stn-ui/theme':
-        specifier: workspace:*
-        version: link:../../core/theme
       '@stn-ui/use-toggle-boolean':
         specifier: workspace:*
         version: link:../../hooks/use-toggle-boolean
     devDependencies:
+      '@hookform/resolvers':
+        specifier: ^3.2.0
+        version: 3.2.0(react-hook-form@7.45.4)
+      '@stn-ui/form':
+        specifier: workspace:*
+        version: link:../form
+      '@stn-ui/inputs':
+        specifier: workspace:*
+        version: link:../inputs
+      '@stn-ui/modal':
+        specifier: workspace:*
+        version: link:../modal
+      '@stn-ui/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
       '@types/object-hash':
         specifier: ^3.0.3
         version: 3.0.3
@@ -1113,9 +1116,6 @@ importers:
       '@stn-ui/icons':
         specifier: workspace:*
         version: link:../icons
-      '@stn-ui/theme':
-        specifier: workspace:*
-        version: link:../../core/theme
       lodash.isempty:
         specifier: ^4.4.0
         version: 4.4.0
@@ -1129,6 +1129,9 @@ importers:
         specifier: ^3.16.1
         version: 3.16.1(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
+      '@stn-ui/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
       '@types/lodash.isempty':
         specifier: ^4.4.7
         version: 4.4.7
