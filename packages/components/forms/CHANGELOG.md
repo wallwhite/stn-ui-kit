@@ -1,5 +1,21 @@
 # @stn-ui/forms
 
+## 2.0.15
+
+### Patch Changes
+
+- e2894b5: fixed issues with chat components
+- Updated dependencies [e2894b5]
+  - @stn-ui/inputs@2.0.14
+  - @stn-ui/theme@2.0.18
+  - @stn-ui/form@2.0.15
+  - @stn-ui/button@2.0.23
+  - @stn-ui/color-avatar@2.0.13
+  - @stn-ui/icons@2.0.16
+  - @stn-ui/logo@2.0.13
+  - @stn-ui/modal@2.0.14
+  - @stn-ui/text@2.0.14
+
 ## 2.0.14
 
 ### Patch Changes

@@ -1,5 +1,34 @@
 # @stn-ui/react
 
+## 2.0.24
+
+### Patch Changes
+
+- Updated dependencies [e2894b5]
+  - @stn-ui/messages@2.0.13
+  - @stn-ui/inputs@2.0.14
+  - @stn-ui/layout@2.0.17
+  - @stn-ui/form@2.0.15
+  - @stn-ui/avatar@2.0.17
+  - @stn-ui/button@2.0.23
+  - @stn-ui/chat-row@2.0.17
+  - @stn-ui/chats-navigation@2.0.13
+  - @stn-ui/color-avatar@2.0.13
+  - @stn-ui/heading@2.0.13
+  - @stn-ui/icons@2.0.16
+  - @stn-ui/link@2.0.18
+  - @stn-ui/loadable@2.0.16
+  - @stn-ui/loader@2.0.16
+  - @stn-ui/logo@2.0.13
+  - @stn-ui/modal@2.0.14
+  - @stn-ui/navigation@2.0.14
+  - @stn-ui/pagination@2.0.13
+  - @stn-ui/sidebar@2.0.13
+  - @stn-ui/switcher@2.0.13
+  - @stn-ui/table@2.0.15
+  - @stn-ui/text@2.0.14
+  - @stn-ui/toasts@2.0.13
+
 ## 2.0.23
 
 ### Patch Changes

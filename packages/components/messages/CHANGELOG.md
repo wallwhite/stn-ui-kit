@@ -1,5 +1,15 @@
 # @stn-ui/messages
 
+## 2.0.13
+
+### Patch Changes
+
+- e2894b5: fixed issues with chat components
+- Updated dependencies [e2894b5]
+  - @stn-ui/theme@2.0.18
+  - @stn-ui/avatar@2.0.17
+  - @stn-ui/icons@2.0.16
+
 ## 2.0.12
 
 ### Patch Changes
