@@ -6,10 +6,11 @@ import { MessageFormSubmit } from './message-form-submit';
 
 interface MessageFormProps {
   placeholder?: string;
+  isDisabled?: boolean;
   onSubmit?: (data: ObjectLiteral) => void | Promise<void>;
 }
 
-export const MessageFormBody: FC<MessageFormProps> = ({ placeholder, onSubmit }) => {
+export const MessageFormBody: FC<MessageFormProps> = ({ placeholder, isDisabled, onSubmit }) => {
   const { trigger, getValues } = useFormContext();
 
   const handleKeyDown = async (e: React.KeyboardEvent<HTMLTextAreaElement>): Promise<void> => {
@@ -32,7 +33,8 @@ export const MessageFormBody: FC<MessageFormProps> = ({ placeholder, onSubmit })
       placeholder={placeholder}
       onKeyDown={handleKeyDown}
       name={MESSAGE_FIELD_NAME}
-      elementRight={<MessageFormSubmit />}
+      disabled={isDisabled}
+      elementRight={<MessageFormSubmit isDisabled={isDisabled} />}
     />
   );
 };

@@ -13,7 +13,7 @@ export interface ChatLayoutProps {
 }
 
 export const ChatLayout: FC<PropsWithChildren<ChatLayoutProps>> = ({ title, actions = [], children }) => (
-  <>
+  <div className={chatLayoutCX.wrapper()}>
     <div className={chatLayoutCX.header()}>
       <div className={chatLayoutCX.title()}>{title}</div>
       <div className={chatLayoutCX.actions()}>
@@ -31,5 +31,5 @@ export const ChatLayout: FC<PropsWithChildren<ChatLayoutProps>> = ({ title, acti
       </div>
     </div>
     {children}
-  </>
+  </div>
 );

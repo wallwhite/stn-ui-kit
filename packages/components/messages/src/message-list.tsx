@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, useEffect, useLayoutEffect, useRef } from 'react';
+import { FC, HTMLAttributes, useEffect, useRef } from 'react';
 import { messageListCX } from '@stn-ui/theme';
 
 export type MessageListProps = HTMLAttributes<HTMLDivElement>;
@@ -7,7 +7,7 @@ export const MessageList: FC<MessageListProps> = ({ children, className, ...prop
   const wrapperRef = useRef<HTMLDivElement>(null);
   const messageListRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const { current: wrapper } = wrapperRef;
     const { current: messageList } = messageListRef;
 

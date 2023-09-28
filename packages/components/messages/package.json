@@ -36,6 +36,10 @@
     "@stn-ui/icons": "workspace:*"
   },
   "devDependencies": {
+    "@stn-ui/sidebar": "workspace:*",
+    "@stn-ui/layout": "workspace:*",
+    "@stn-ui/navigation": "workspace:*",
+    "@stn-ui/forms": "workspace:*",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "clean-package": "2.2.0",
     "eslint": "^8.44.0",

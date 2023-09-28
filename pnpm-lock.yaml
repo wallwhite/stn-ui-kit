@@ -1080,6 +1080,18 @@ importers:
         specifier: workspace:*
         version: link:../../core/theme
     devDependencies:
+      '@stn-ui/forms':
+        specifier: workspace:*
+        version: link:../forms
+      '@stn-ui/layout':
+        specifier: workspace:*
+        version: link:../layout
+      '@stn-ui/navigation':
+        specifier: workspace:*
+        version: link:../navigation
+      '@stn-ui/sidebar':
+        specifier: workspace:*
+        version: link:../sidebar
       '@vitejs/plugin-react-swc':
         specifier: ^3.3.2
         version: 3.3.2(vite@4.4.9)

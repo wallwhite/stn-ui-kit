@@ -14,6 +14,7 @@ export interface TextareaProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaE
   label?: ReactNode;
   elementLeft?: ReactNode;
   elementRight?: ReactNode;
+  minRows?: number;
   maxRows?: number;
   isWide?: boolean;
   isDisabled?: boolean;
@@ -26,11 +27,13 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>((props, r
     error,
     success,
     label,
+    minRows = 1,
     maxRows = 5,
     elementLeft,
     elementRight,
     isDisabled,
     isWide,
+    className,
     ...restProps
   } = props;
 
@@ -67,9 +70,9 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>((props, r
         {elementLeft && <span className={textareaCX.addonElement()}>{elementLeft}</span>}
         <span className={textareaCX.textareaWrapper()}>
           <textarea
-            className={textareaCX.textareaElement()}
+            className={textareaCX.textareaElement(className)}
             id={`${label || 'default'}`}
-            rows={1}
+            rows={minRows}
             ref={mergeRefs(textAreaRef, ref)}
             disabled={isDisabled}
             style={{ maxHeight: `${maxRows * 18}px` }}

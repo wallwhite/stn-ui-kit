@@ -40,6 +40,6 @@ export const messageLoaderCX = {
 };
 
 export const messageListCX = {
-  wrapper: (): string => styles.wrapper,
+  wrapper: (): string => styles.messageListWrapper,
   list: (className?: string): string => cx(styles.messageList, className),
 };
