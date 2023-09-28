@@ -1,5 +1,25 @@
 # @stn-ui/forms
 
+## 2.0.12
+
+### Patch Changes
+
+- a300724: changed dependencies
+- 48cb730: trigger release
+- Updated dependencies [a300724]
+- Updated dependencies [48cb730]
+  - @stn-ui/modal@2.0.13
+  - @stn-ui/form@2.0.12
+  - @stn-ui/button@2.0.22
+  - @stn-ui/color-avatar@2.0.12
+  - @stn-ui/icons@2.0.15
+  - @stn-ui/inputs@2.0.12
+  - @stn-ui/logo@2.0.12
+  - @stn-ui/text@2.0.13
+  - @stn-ui/theme@2.0.17
+  - @stn-ui/use-toggle-boolean@2.0.5
+  - @stn-ui/react-utils@2.0.4
+
 ## 2.0.11
 
 ### Patch Changes

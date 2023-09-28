@@ -1,5 +1,13 @@
 # @stn-ui/provider
 
+## 2.0.6
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/use-toggle-boolean@2.0.5
+
 ## 2.0.5
 
 ### Patch Changes

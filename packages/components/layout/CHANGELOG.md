@@ -1,5 +1,19 @@
 # @stn-ui/layout
 
+## 2.0.16
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/avatar@2.0.16
+  - @stn-ui/heading@2.0.12
+  - @stn-ui/icons@2.0.15
+  - @stn-ui/link@2.0.17
+  - @stn-ui/provider@2.0.6
+  - @stn-ui/text@2.0.13
+  - @stn-ui/theme@2.0.17
+
 ## 2.0.15
 
 ### Patch Changes

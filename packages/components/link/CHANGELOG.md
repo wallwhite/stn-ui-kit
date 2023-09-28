@@ -1,5 +1,14 @@
 # @stn-ui/link
 
+## 2.0.17
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/theme@2.0.17
+  - @stn-ui/react-utils@2.0.4
+
 ## 2.0.16
 
 ### Patch Changes

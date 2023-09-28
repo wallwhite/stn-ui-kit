@@ -1,5 +1,15 @@
 # @stn-ui/button
 
+## 2.0.22
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/link@2.0.17
+  - @stn-ui/loadable@2.0.15
+  - @stn-ui/theme@2.0.17
+
 ## 2.0.21
 
 ### Patch Changes

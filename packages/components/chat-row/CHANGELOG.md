@@ -1,5 +1,17 @@
 # @stn-ui/button
 
+## 2.0.16
+
+### Patch Changes
+
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/avatar@2.0.16
+  - @stn-ui/icons@2.0.15
+  - @stn-ui/table@2.0.14
+  - @stn-ui/theme@2.0.17
+  - @stn-ui/common-utils@2.0.3
+
 ## 2.0.15
 
 ### Patch Changes

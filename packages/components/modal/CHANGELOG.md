@@ -1,5 +1,17 @@
 # @stn-ui/modal
 
+## 2.0.13
+
+### Patch Changes
+
+- a300724: changed dependencies
+- 48cb730: trigger release
+- Updated dependencies [48cb730]
+  - @stn-ui/button@2.0.22
+  - @stn-ui/heading@2.0.12
+  - @stn-ui/icons@2.0.15
+  - @stn-ui/theme@2.0.17
+
 ## 2.0.12
 
 ### Patch Changes
