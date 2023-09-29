@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/pagination",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

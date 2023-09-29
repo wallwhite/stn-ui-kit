@@ -1,5 +1,15 @@
 # @stn-ui/button
 
+## 2.0.16
+
+### Patch Changes
+
+- 5e38ee7: update the version
+- Updated dependencies [5e38ee7]
+  - @stn-ui/link@2.0.19
+  - @stn-ui/theme@2.0.19
+  - @stn-ui/use-toggle-boolean@2.0.6
+
 ## 2.0.15
 
 ### Patch Changes

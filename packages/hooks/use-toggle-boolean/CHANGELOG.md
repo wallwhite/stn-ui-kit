@@ -1,5 +1,11 @@
 # @stn-ui/use-toggle-boolean
 
+## 2.0.6
+
+### Patch Changes
+
+- 5e38ee7: update the version
+
 ## 2.0.5
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @stn-ui/heading
 
+## 2.0.14
+
+### Patch Changes
+
+- 5e38ee7: update the version
+- Updated dependencies [5e38ee7]
+  - @stn-ui/theme@2.0.19
+
 ## 2.0.13
 
 ### Patch Changes
