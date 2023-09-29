@@ -608,6 +608,9 @@ importers:
 
   packages/components/forms:
     dependencies:
+      '@hookform/resolvers':
+        specifier: ^3.2.0
+        version: 3.2.0(react-hook-form@7.45.4)
       '@stn-ui/button':
         specifier: workspace:*
         version: link:../button
@@ -630,9 +633,6 @@ importers:
         specifier: workspace:*
         version: link:../../hooks/use-toggle-boolean
     devDependencies:
-      '@hookform/resolvers':
-        specifier: ^3.2.0
-        version: 3.2.0(react-hook-form@7.45.4)
       '@stn-ui/form':
         specifier: workspace:*
         version: link:../form
@@ -3889,6 +3889,7 @@ packages:
       react-hook-form: ^7.0.0
     dependencies:
       react-hook-form: 7.45.4(react@18.2.0)
+    dev: false
 
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}

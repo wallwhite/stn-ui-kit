@@ -19,12 +19,10 @@ export default defineConfig({
         'react-dom',
         'react-hook-form',
         'yup',
-        'framer-motion',
         '@stn-ui/modal',
         '@stn-ui/theme',
         '@stn-ui/form',
         '@stn-ui/inputs',
-        '@hookform/resolvers',
       ],
       input: {
         index: path.resolve(__dirname, 'src/index.ts'),
