@@ -617,9 +617,15 @@ importers:
       '@stn-ui/color-avatar':
         specifier: workspace:*
         version: link:../color-avatar
+      '@stn-ui/form':
+        specifier: workspace:*
+        version: link:../form
       '@stn-ui/icons':
         specifier: workspace:*
         version: link:../icons
+      '@stn-ui/inputs':
+        specifier: workspace:*
+        version: link:../inputs
       '@stn-ui/logo':
         specifier: workspace:*
         version: link:../logo
@@ -633,12 +639,6 @@ importers:
         specifier: workspace:*
         version: link:../../hooks/use-toggle-boolean
     devDependencies:
-      '@stn-ui/form':
-        specifier: workspace:*
-        version: link:../form
-      '@stn-ui/inputs':
-        specifier: workspace:*
-        version: link:../inputs
       '@stn-ui/modal':
         specifier: workspace:*
         version: link:../modal
