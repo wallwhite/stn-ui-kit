@@ -1,5 +1,11 @@
 # @stn-ui/forms
 
+## 2.0.16
+
+### Patch Changes
+
+- 8a17062: update forms
+
 ## 2.0.15
 
 ### Patch Changes
