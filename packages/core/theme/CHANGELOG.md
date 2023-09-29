@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.0.18
+
+### Patch Changes
+
+- e2894b5: fixed issues with chat components
+
 ## 2.0.17
 
 ### Patch Changes

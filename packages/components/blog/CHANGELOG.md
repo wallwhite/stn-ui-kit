@@ -1,5 +1,15 @@
 # @stn-ui/blog
 
+## 2.0.14
+
+### Patch Changes
+
+- Updated dependencies [e2894b5]
+  - @stn-ui/theme@2.0.18
+  - @stn-ui/avatar@2.0.17
+  - @stn-ui/icons@2.0.16
+  - @stn-ui/link@2.0.18
+
 ## 2.0.13
 
 ### Patch Changes
