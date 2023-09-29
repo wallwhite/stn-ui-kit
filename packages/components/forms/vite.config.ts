@@ -14,16 +14,7 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: [
-        'react',
-        'react-dom',
-        'react-hook-form',
-        'yup',
-        '@stn-ui/modal',
-        '@stn-ui/theme',
-        '@stn-ui/form',
-        '@stn-ui/inputs',
-      ],
+      external: ['react', 'react-dom', 'react-hook-form', 'yup', '@stn-ui/modal', '@stn-ui/theme'],
       input: {
         index: path.resolve(__dirname, 'src/index.ts'),
       },
