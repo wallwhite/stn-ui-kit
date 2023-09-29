@@ -1,5 +1,19 @@
 # @stn-ui/layout
 
+## 2.0.18
+
+### Patch Changes
+
+- 5e38ee7: update the version
+- Updated dependencies [5e38ee7]
+  - @stn-ui/avatar@2.0.18
+  - @stn-ui/heading@2.0.14
+  - @stn-ui/icons@2.0.17
+  - @stn-ui/link@2.0.19
+  - @stn-ui/provider@2.0.7
+  - @stn-ui/text@2.0.15
+  - @stn-ui/theme@2.0.19
+
 ## 2.0.17
 
 ### Patch Changes

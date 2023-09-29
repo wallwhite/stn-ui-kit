@@ -1,5 +1,14 @@
 # @stn-ui/link
 
+## 2.0.19
+
+### Patch Changes
+
+- 5e38ee7: update the version
+- Updated dependencies [5e38ee7]
+  - @stn-ui/theme@2.0.19
+  - @stn-ui/react-utils@2.0.5
+
 ## 2.0.18
 
 ### Patch Changes

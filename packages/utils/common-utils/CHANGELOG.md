@@ -1,5 +1,11 @@
 # @stn-ui/react-utils
 
+## 2.0.4
+
+### Patch Changes
+
+- 5e38ee7: update the version
+
 ## 2.0.3
 
 ### Patch Changes

@@ -1,5 +1,24 @@
 # @stn-ui/forms
 
+## 2.0.17
+
+### Patch Changes
+
+- d29e25d: form update
+- 5e38ee7: update the version
+- Updated dependencies [5e38ee7]
+  - @stn-ui/button@2.0.24
+  - @stn-ui/color-avatar@2.0.14
+  - @stn-ui/form@2.0.16
+  - @stn-ui/icons@2.0.17
+  - @stn-ui/inputs@2.0.15
+  - @stn-ui/logo@2.0.14
+  - @stn-ui/modal@2.0.15
+  - @stn-ui/text@2.0.15
+  - @stn-ui/theme@2.0.19
+  - @stn-ui/use-toggle-boolean@2.0.6
+  - @stn-ui/react-utils@2.0.5
+
 ## 2.0.16
 
 ### Patch Changes
