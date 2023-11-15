@@ -1,5 +1,19 @@
 # @stn-ui/layout
 
+## 3.0.1
+
+### Patch Changes
+
+- f31a657: Bump version
+- Updated dependencies [f31a657]
+  - @stn-ui/avatar@2.1.1
+  - @stn-ui/heading@2.1.1
+  - @stn-ui/icons@2.1.1
+  - @stn-ui/link@2.1.1
+  - @stn-ui/provider@2.1.1
+  - @stn-ui/text@2.1.1
+  - @stn-ui/theme@2.1.1
+
 ## 3.0.0
 
 ### Minor Changes
