@@ -1,5 +1,16 @@
 # @stn-ui/sidebar
 
+## 3.0.1
+
+### Patch Changes
+
+- f31a657: Bump version
+- Updated dependencies [f31a657]
+  - @stn-ui/icons@2.1.1
+  - @stn-ui/logo@2.1.1
+  - @stn-ui/provider@2.1.1
+  - @stn-ui/theme@2.1.1
+
 ## 3.0.0
 
 ### Minor Changes

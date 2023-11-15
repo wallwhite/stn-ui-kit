@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/form",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

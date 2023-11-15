@@ -1,5 +1,11 @@
 # @stn-ui/react-utils
 
+## 2.1.1
+
+### Patch Changes
+
+- f31a657: Bump version
+
 ## 2.1.0
 
 ### Minor Changes

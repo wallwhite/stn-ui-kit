@@ -1,5 +1,18 @@
 # @stn-ui/chats-navigation
 
+## 2.1.1
+
+### Patch Changes
+
+- f31a657: Bump version
+- Updated dependencies [f31a657]
+  - @stn-ui/button@2.1.1
+  - @stn-ui/heading@2.1.1
+  - @stn-ui/icons@2.1.1
+  - @stn-ui/link@2.1.1
+  - @stn-ui/theme@2.1.1
+  - @stn-ui/use-toggle-boolean@2.1.1
+
 ## 2.1.0
 
 ### Minor Changes
