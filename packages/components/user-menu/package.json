@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/user-menu",
-  "version": "2.0.15",
+  "version": "2.1.0",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

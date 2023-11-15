@@ -1,5 +1,12 @@
 # @stn-ui/theme
 
+## 2.1.0
+
+### Minor Changes
+
+- c495fe7: Update
+- c495fe7: Update version
+
 ## 2.0.19
 
 ### Patch Changes

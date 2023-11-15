@@ -1,5 +1,11 @@
 # @stn-ui/react-utils
 
+## 2.1.0
+
+### Minor Changes
+
+- c495fe7: Update version
+
 ## 2.0.4
 
 ### Patch Changes
