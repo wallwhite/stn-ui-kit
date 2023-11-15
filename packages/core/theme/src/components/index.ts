@@ -32,3 +32,4 @@ export * from './accordion';
 export * from './features';
 export * from './blog';
 export * from './banner';
+export * from './user-menu';

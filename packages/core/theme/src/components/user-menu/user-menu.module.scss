@@ -1,0 +1,77 @@
+/* stylelint-disable no-descending-specificity */
+@import 'helpers';
+
+.user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 8px;
+    border: 0 solid rgb(229 231 235);
+    box-shadow: rgb(0 0 0 / 0%) 0 0 0 0, rgb(0 0 0 / 0%) 0 0 0 0, rgb(255 255 255 / 5%) 0 1px 0 0 inset, rgb(0 0 0 / 10%) 0 4px 8px 0;
+    background: linear-gradient(to left, rgb(50 51 55), rgb(70 79 111 / 30%));
+    padding: 8px;
+    gap: 8px;
+
+    @include rTablet {
+        box-shadow: none;
+        background: none;
+    }
+
+    &.collapsed {
+        box-shadow: none;
+        background: none;
+
+        .content {
+            display: none;
+        }
+    }
+}
+
+.content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @include rTablet {
+       display: none;
+    }
+}
+
+.label {
+    color: $grayscale600;
+}
+
+.title {
+    color: $grayscale300;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $grayscale900;
+    padding: 8px;
+    border-radius: 8px;
+    width: 240px;
+    z-index: 9;
+
+    &Item {
+        display: flex;
+        height: 32px;
+        width: 100%;
+        align-items: center;
+        padding: 8px;
+        border-radius: 4px;
+        color: $grayscale300;
+        cursor: pointer;
+
+        &:hover {
+            background-color:  colorRgba($grayscale800, 0.4);
+            color: $grayscale100;
+        }
+    }
+}

@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/https://github.com/Storency/stn-ui.git",
+    "url": "git+https://github.com/wallwhite/stn-ui-kit.git",
     "directory": "packages/core/theme"
   },
   "scripts": {

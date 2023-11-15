@@ -22,7 +22,7 @@
     bottom: 0;
     width: 100vw;
     height: 96px;
-    padding: 0 24px;
+    padding: 0 8px;
 
     &.expanded {
       width: 100vw;
@@ -63,6 +63,7 @@
   @include rMobile {
     gap: 24px;
     flex-direction: row;
+    padding-right: 64px;
   }
 }
 
@@ -72,6 +73,11 @@
   left: 0;
   right: 0;
   padding: 0 16px 24px;
+
+  @include rMobile {
+    left: unset;
+    right: 0;
+  }
 }
 
 .toggle {
