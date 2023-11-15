@@ -41,6 +41,9 @@
     "react-responsive": "^9.0.2"
   },
   "devDependencies": {
+    "@stn-ui/sidebar": "workspace:*",
+    "@stn-ui/navigation": "workspace:*",
+    "@stn-ui/user-menu": "workspace:*",
     "@stn-ui/provider": "workspace:*",
     "@types/object-hash": "^3.0.3",
     "@vitejs/plugin-react-swc": "^3.3.2",
