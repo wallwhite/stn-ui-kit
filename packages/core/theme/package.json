@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/theme",
-  "version": "2.0.19",
+  "version": "2.1.0",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

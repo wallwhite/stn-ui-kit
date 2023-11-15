@@ -1,5 +1,24 @@
 # @stn-ui/layout
 
+## 3.0.0
+
+### Minor Changes
+
+- c495fe7: Update
+- c495fe7: Update version
+
+### Patch Changes
+
+- Updated dependencies [c495fe7]
+- Updated dependencies [c495fe7]
+  - @stn-ui/provider@2.1.0
+  - @stn-ui/avatar@2.1.0
+  - @stn-ui/link@2.1.0
+  - @stn-ui/theme@2.1.0
+  - @stn-ui/heading@2.1.0
+  - @stn-ui/icons@2.1.0
+  - @stn-ui/text@2.1.0
+
 ## 2.0.18
 
 ### Patch Changes

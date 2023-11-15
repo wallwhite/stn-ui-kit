@@ -1,5 +1,21 @@
 # @stn-ui/inputs
 
+## 3.0.0
+
+### Minor Changes
+
+- c495fe7: Update version
+
+### Patch Changes
+
+- Updated dependencies [c495fe7]
+- Updated dependencies [c495fe7]
+  - @stn-ui/theme@2.1.0
+  - @stn-ui/icons@2.1.0
+  - @stn-ui/text@2.1.0
+  - @stn-ui/use-toggle-boolean@2.1.0
+  - @stn-ui/react-utils@2.1.0
+
 ## 2.0.15
 
 ### Patch Changes
