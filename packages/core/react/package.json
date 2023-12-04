@@ -33,12 +33,17 @@
     "react-dom": ">=18"
   },
   "dependencies": {
+    "@stn-ui/accordion": "workspace:*",
     "@stn-ui/avatar": "workspace:*",
+    "@stn-ui/banner": "workspace:*",
+    "@stn-ui/blog": "workspace:*",
     "@stn-ui/button": "workspace:*",
     "@stn-ui/chat-row": "workspace:*",
     "@stn-ui/chats-navigation": "workspace:*",
     "@stn-ui/color-avatar": "workspace:*",
+    "@stn-ui/features": "workspace:*",
     "@stn-ui/form": "workspace:*",
+    "@stn-ui/forms": "workspace:*",
     "@stn-ui/heading": "workspace:*",
     "@stn-ui/icons": "workspace:*",
     "@stn-ui/inputs": "workspace:*",
@@ -57,6 +62,8 @@
     "@stn-ui/table": "workspace:*",
     "@stn-ui/text": "workspace:*",
     "@stn-ui/toasts": "workspace:*",
+    "@stn-ui/user-menu": "workspace:*",
+    "@stn-ui/use-toggle-boolean": "workspace:*",
     "object-hash": "^3.0.0"
   },
   "devDependencies": {

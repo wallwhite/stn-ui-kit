@@ -3,13 +3,13 @@ import { Heading } from '@stn-ui/heading';
 import { Text } from '@stn-ui/text';
 import { bannerCX } from '@stn-ui/theme';
 
-export interface AccordionProps extends HTMLAttributes<HTMLDivElement> {
+export interface BannerProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
   description: string;
   icon: ReactNode;
 }
 
-export const Banner: FC<AccordionProps> = ({ title, description, icon, children, className, ...restProps }) => (
+export const Banner: FC<BannerProps> = ({ title, description, icon, children, className, ...restProps }) => (
   <div className={bannerCX.wrapper(className)} {...restProps}>
     <div className={bannerCX.iconWrapper()}>
       <div className={bannerCX.iconBackground()}>
