@@ -1,5 +1,12 @@
 # @stn-ui/forms
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [72cdb0b]
+  - @stn-ui/form@4.1.0
+
 ## 4.0.0
 
 ### Minor Changes

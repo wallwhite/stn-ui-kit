@@ -1,5 +1,18 @@
 # @stn-ui/react
 
+## 2.3.0
+
+### Minor Changes
+
+- 72cdb0b: Do not remove hook form resolvers from bundle
+
+### Patch Changes
+
+- Updated dependencies [72cdb0b]
+  - @stn-ui/form@4.1.0
+  - @stn-ui/forms@4.0.1
+  - @stn-ui/messages@2.2.0
+
 ## 2.2.0
 
 ### Minor Changes
