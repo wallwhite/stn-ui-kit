@@ -1,0 +1,39 @@
+---
+"@stn-ui/banner": minor
+"@stn-ui/react": minor
+"@stn-ui/accordion": minor
+"@stn-ui/avatar": minor
+"@stn-ui/blog": minor
+"@stn-ui/button": minor
+"@stn-ui/chat-row": minor
+"@stn-ui/chats-navigation": minor
+"@stn-ui/color-avatar": minor
+"@stn-ui/features": minor
+"@stn-ui/form": minor
+"@stn-ui/forms": minor
+"@stn-ui/heading": minor
+"@stn-ui/icons": minor
+"@stn-ui/inputs": minor
+"@stn-ui/layout": minor
+"@stn-ui/link": minor
+"@stn-ui/loadable": minor
+"@stn-ui/loader": minor
+"@stn-ui/logo": minor
+"@stn-ui/messages": minor
+"@stn-ui/modal": minor
+"@stn-ui/navigation": minor
+"@stn-ui/pagination": minor
+"@stn-ui/provider": minor
+"@stn-ui/sidebar": minor
+"@stn-ui/switcher": minor
+"@stn-ui/table": minor
+"@stn-ui/text": minor
+"@stn-ui/toasts": minor
+"@stn-ui/user-menu": minor
+"@stn-ui/theme": minor
+"@stn-ui/use-toggle-boolean": minor
+"@stn-ui/common-utils": minor
+"@stn-ui/react-utils": minor
+---
+
+Added everything to react package
