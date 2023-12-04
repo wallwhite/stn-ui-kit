@@ -12,7 +12,7 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react-hook-form', 'yup', 'framer-motion', '@hookform/resolvers'],
+      external: ['react', 'react-dom', 'react-hook-form', 'yup', 'framer-motion'],
       input: {
         index: path.resolve(__dirname, 'src/index.ts'),
       },
