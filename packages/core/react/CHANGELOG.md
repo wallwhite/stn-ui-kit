@@ -1,5 +1,46 @@
 # @stn-ui/react
 
+## 2.2.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
+### Patch Changes
+
+- Updated dependencies [68efa0a]
+  - @stn-ui/banner@2.2.0
+  - @stn-ui/accordion@2.2.0
+  - @stn-ui/avatar@2.2.0
+  - @stn-ui/blog@2.2.0
+  - @stn-ui/button@2.2.0
+  - @stn-ui/chat-row@4.0.0
+  - @stn-ui/chats-navigation@2.2.0
+  - @stn-ui/color-avatar@2.2.0
+  - @stn-ui/features@2.2.0
+  - @stn-ui/form@4.0.0
+  - @stn-ui/forms@4.0.0
+  - @stn-ui/heading@2.2.0
+  - @stn-ui/icons@2.2.0
+  - @stn-ui/inputs@4.0.0
+  - @stn-ui/layout@4.0.0
+  - @stn-ui/link@2.2.0
+  - @stn-ui/loadable@2.2.0
+  - @stn-ui/loader@2.2.0
+  - @stn-ui/logo@2.2.0
+  - @stn-ui/messages@2.2.0
+  - @stn-ui/modal@4.0.0
+  - @stn-ui/navigation@2.2.0
+  - @stn-ui/pagination@2.2.0
+  - @stn-ui/provider@2.2.0
+  - @stn-ui/sidebar@4.0.0
+  - @stn-ui/switcher@2.2.0
+  - @stn-ui/table@2.2.0
+  - @stn-ui/text@2.2.0
+  - @stn-ui/toasts@2.2.0
+  - @stn-ui/user-menu@2.2.0
+  - @stn-ui/use-toggle-boolean@2.2.0
+
 ## 2.1.1
 
 ### Patch Changes

@@ -1,5 +1,20 @@
 # @stn-ui/inputs
 
+## 4.0.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
+### Patch Changes
+
+- Updated dependencies [68efa0a]
+  - @stn-ui/icons@2.2.0
+  - @stn-ui/text@2.2.0
+  - @stn-ui/theme@2.2.0
+  - @stn-ui/use-toggle-boolean@2.2.0
+  - @stn-ui/react-utils@2.2.0
+
 ## 3.0.1
 
 ### Patch Changes
