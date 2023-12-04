@@ -1,5 +1,11 @@
 # @stn-ui/form
 
+## 4.1.0
+
+### Minor Changes
+
+- 72cdb0b: Do not remove hook form resolvers from bundle
+
 ## 4.0.0
 
 ### Minor Changes
