@@ -1,5 +1,19 @@
 # @stn-ui/sidebar
 
+## 4.0.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
+### Patch Changes
+
+- Updated dependencies [68efa0a]
+  - @stn-ui/icons@2.2.0
+  - @stn-ui/logo@2.2.0
+  - @stn-ui/provider@2.2.0
+  - @stn-ui/theme@2.2.0
+
 ## 3.0.1
 
 ### Patch Changes

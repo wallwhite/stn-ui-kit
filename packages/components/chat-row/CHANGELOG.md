@@ -1,5 +1,20 @@
 # @stn-ui/button
 
+## 4.0.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
+### Patch Changes
+
+- Updated dependencies [68efa0a]
+  - @stn-ui/avatar@2.2.0
+  - @stn-ui/icons@2.2.0
+  - @stn-ui/table@2.2.0
+  - @stn-ui/theme@2.2.0
+  - @stn-ui/common-utils@2.2.0
+
 ## 3.0.1
 
 ### Patch Changes

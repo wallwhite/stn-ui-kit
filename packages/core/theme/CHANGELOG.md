@@ -1,5 +1,11 @@
 # @stn-ui/theme
 
+## 2.2.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
 ## 2.1.1
 
 ### Patch Changes

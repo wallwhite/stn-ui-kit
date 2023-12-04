@@ -1,5 +1,18 @@
 # @stn-ui/user-menu
 
+## 2.2.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
+### Patch Changes
+
+- Updated dependencies [68efa0a]
+  - @stn-ui/avatar@2.2.0
+  - @stn-ui/text@2.2.0
+  - @stn-ui/theme@2.2.0
+
 ## 2.1.1
 
 ### Patch Changes

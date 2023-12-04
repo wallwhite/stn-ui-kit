@@ -1,5 +1,18 @@
 # @stn-ui/button
 
+## 2.2.0
+
+### Minor Changes
+
+- 68efa0a: Added everything to react package
+
+### Patch Changes
+
+- Updated dependencies [68efa0a]
+  - @stn-ui/link@2.2.0
+  - @stn-ui/theme@2.2.0
+  - @stn-ui/use-toggle-boolean@2.2.0
+
 ## 2.1.1
 
 ### Patch Changes
