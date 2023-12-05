@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/provider",
-  "version": "2.2.0",
+  "version": "5.0.0",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

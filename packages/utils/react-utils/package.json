@@ -1,6 +1,6 @@
 {
   "name": "@stn-ui/react-utils",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "Yaroslav Romanenko <yarikrom05@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",

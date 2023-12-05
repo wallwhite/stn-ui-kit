@@ -1,5 +1,19 @@
 # @stn-ui/button
 
+## 5.0.0
+
+### Minor Changes
+
+- 95b6a34: Changed framer motion includion in bundle
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/avatar@5.0.0
+  - @stn-ui/icons@5.0.0
+  - @stn-ui/table@5.0.0
+  - @stn-ui/theme@5.0.0
+
 ## 4.0.0
 
 ### Minor Changes

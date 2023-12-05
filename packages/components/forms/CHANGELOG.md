@@ -1,5 +1,22 @@
 # @stn-ui/forms
 
+## 5.0.0
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/use-toggle-boolean@2.3.0
+  - @stn-ui/color-avatar@5.0.0
+  - @stn-ui/button@5.0.0
+  - @stn-ui/inputs@5.0.0
+  - @stn-ui/react-utils@2.3.0
+  - @stn-ui/icons@5.0.0
+  - @stn-ui/modal@5.0.0
+  - @stn-ui/form@5.0.0
+  - @stn-ui/logo@5.0.0
+  - @stn-ui/text@5.0.0
+  - @stn-ui/theme@5.0.0
+
 ## 4.0.1
 
 ### Patch Changes

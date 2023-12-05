@@ -1,5 +1,11 @@
 # @stn-ui/react-utils
 
+## 2.3.0
+
+### Minor Changes
+
+- 95b6a34: Changed framer motion includion in bundle
+
 ## 2.2.0
 
 ### Minor Changes

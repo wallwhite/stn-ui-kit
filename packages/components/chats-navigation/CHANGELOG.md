@@ -1,5 +1,17 @@
 # @stn-ui/chats-navigation
 
+## 5.0.0
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/use-toggle-boolean@2.3.0
+  - @stn-ui/heading@5.0.0
+  - @stn-ui/button@5.0.0
+  - @stn-ui/icons@5.0.0
+  - @stn-ui/link@5.0.0
+  - @stn-ui/theme@5.0.0
+
 ## 2.2.0
 
 ### Minor Changes
