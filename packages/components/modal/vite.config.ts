@@ -14,7 +14,7 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'framer-motion', '@stn-ui/theme'],
+      external: ['react', 'react-dom', '@stn-ui/theme'],
       input: {
         index: path.resolve(__dirname, 'src/index.ts'),
       },

@@ -348,6 +348,9 @@ importers:
       '@stn-ui/icons':
         specifier: workspace:*
         version: link:../icons
+      '@stn-ui/table':
+        specifier: workspace:*
+        version: link:../table
       '@stn-ui/theme':
         specifier: workspace:*
         version: link:../../core/theme
@@ -355,9 +358,6 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
     devDependencies:
-      '@stn-ui/table':
-        specifier: workspace:*
-        version: link:../table
       '@types/object-hash':
         specifier: ^3.0.3
         version: 3.0.3
@@ -1738,6 +1738,9 @@ importers:
       object-hash:
         specifier: ^3.0.0
         version: 3.0.0
+      rollup-plugin-banner2:
+        specifier: ^1.2.2
+        version: 1.2.2
     devDependencies:
       '@types/object-hash':
         specifier: ^3.0.3
@@ -1751,12 +1754,18 @@ importers:
       eslint:
         specifier: ^8.44.0
         version: 8.44.0
+      framer-motion:
+        specifier: ^10.15.0
+        version: 10.15.0(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      react-hook-form:
+        specifier: ^7.45.4
+        version: 7.45.4(react@18.2.0)
       sass:
         specifier: ^1.58.3
         version: 1.58.3
@@ -1769,6 +1778,9 @@ importers:
       vite-plugin-dts:
         specifier: ^2.3.0
         version: 2.3.0(@types/node@15.12.4)(vite@4.4.9)
+      yup:
+        specifier: ^1.2.0
+        version: 1.2.0
 
   packages/core/theme:
     dependencies:
@@ -10964,7 +10976,6 @@ packages:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
       sourcemap-codec: 1.4.8
-    dev: true
 
   /magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
@@ -12642,7 +12653,6 @@ packages:
     engines: {node: '>=12.13.0'}
     dependencies:
       magic-string: 0.25.9
-    dev: true
 
   /rollup@3.28.0:
     resolution: {integrity: sha512-d7zhvo1OUY2SXSM6pfNjgD5+d0Nz87CUp4mt8l/GgVP3oBsPwzNvSzyu1me6BSG9JIgWNTVcafIXBIyM8yQ3yw==}
@@ -12986,7 +12996,6 @@ packages:
   /sourcemap-codec@1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     deprecated: Please use @jridgewell/sourcemap-codec instead
-    dev: true
 
   /space-separated-tokens@1.1.5:
     resolution: {integrity: sha512-q/JSVd1Lptzhf5bkYm4ob4iWPjx0KiRe3sRFBNrVqbJkFaBm5vbbowy1mymoPNLRa52+oadOhJ+K49wsSeSjTA==}

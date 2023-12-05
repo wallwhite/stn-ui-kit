@@ -1,5 +1,6 @@
 import path from 'path';
 import react from '@vitejs/plugin-react-swc';
+import banner2 from 'rollup-plugin-banner2';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
@@ -12,10 +13,11 @@ export default defineConfig({
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react-hook-form', 'yup', 'framer-motion'],
+      external: ['react', 'react-dom', 'framer-motion', 'react-hook-form', 'yup'],
       input: {
         index: path.resolve(__dirname, 'src/index.ts'),
       },
+      plugins: [banner2(() => `"use client";`)],
     },
   },
   resolve: {
