@@ -1,5 +1,46 @@
 # @stn-ui/react
 
+## 2.4.0
+
+### Minor Changes
+
+- 95b6a34: Changed framer motion includion in bundle
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/use-toggle-boolean@2.3.0
+  - @stn-ui/color-avatar@5.0.0
+  - @stn-ui/pagination@5.0.0
+  - @stn-ui/user-menu@5.0.0
+  - @stn-ui/chat-row@5.0.0
+  - @stn-ui/features@5.0.0
+  - @stn-ui/loadable@5.0.0
+  - @stn-ui/messages@5.0.0
+  - @stn-ui/provider@5.0.0
+  - @stn-ui/heading@5.0.0
+  - @stn-ui/sidebar@5.0.0
+  - @stn-ui/avatar@5.0.0
+  - @stn-ui/banner@5.0.0
+  - @stn-ui/button@5.0.0
+  - @stn-ui/inputs@5.0.0
+  - @stn-ui/layout@5.0.0
+  - @stn-ui/loader@5.0.0
+  - @stn-ui/icons@5.0.0
+  - @stn-ui/modal@5.0.0
+  - @stn-ui/table@5.0.0
+  - @stn-ui/blog@5.0.0
+  - @stn-ui/form@5.0.0
+  - @stn-ui/link@5.0.0
+  - @stn-ui/logo@5.0.0
+  - @stn-ui/text@5.0.0
+  - @stn-ui/chats-navigation@5.0.0
+  - @stn-ui/forms@5.0.0
+  - @stn-ui/toasts@5.0.0
+  - @stn-ui/accordion@5.0.0
+  - @stn-ui/navigation@5.0.0
+  - @stn-ui/switcher@5.0.0
+
 ## 2.3.0
 
 ### Minor Changes

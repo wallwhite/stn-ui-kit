@@ -1,5 +1,22 @@
 # @stn-ui/layout
 
+## 5.0.0
+
+### Minor Changes
+
+- 95b6a34: Changed framer motion includion in bundle
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/provider@5.0.0
+  - @stn-ui/heading@5.0.0
+  - @stn-ui/avatar@5.0.0
+  - @stn-ui/icons@5.0.0
+  - @stn-ui/link@5.0.0
+  - @stn-ui/text@5.0.0
+  - @stn-ui/theme@5.0.0
+
 ## 4.0.0
 
 ### Minor Changes

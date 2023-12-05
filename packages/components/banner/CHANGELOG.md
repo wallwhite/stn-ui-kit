@@ -1,5 +1,18 @@
 # @stn-ui/banner
 
+## 5.0.0
+
+### Minor Changes
+
+- 95b6a34: Changed framer motion includion in bundle
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/heading@5.0.0
+  - @stn-ui/text@5.0.0
+  - @stn-ui/theme@5.0.0
+
 ## 2.2.0
 
 ### Minor Changes

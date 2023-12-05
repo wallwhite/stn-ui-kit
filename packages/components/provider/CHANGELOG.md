@@ -1,5 +1,16 @@
 # @stn-ui/provider
 
+## 5.0.0
+
+### Minor Changes
+
+- 95b6a34: Changed framer motion includion in bundle
+
+### Patch Changes
+
+- Updated dependencies [95b6a34]
+  - @stn-ui/use-toggle-boolean@2.3.0
+
 ## 2.2.0
 
 ### Minor Changes
