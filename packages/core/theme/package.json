@@ -48,7 +48,7 @@
     "@vitejs/plugin-react-swc": "^3.0.0",
     "clean-package": "2.2.0",
     "sass": "^1.58.3",
-    "vite": "^4.4.9",
+    "vite": "^4.5.2",
     "vite-plugin-dts": "^2.1.0"
   }
 }
